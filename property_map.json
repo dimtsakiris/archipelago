@@ -1,0 +1,66 @@
+{
+  "instance_of": {
+    "pid": "P1",
+    "datatype": "Item"
+  },
+  "creator": {
+    "pid": "P2",
+    "datatype": "String"
+  },
+  "date_of_creation": {
+    "pid": "P3",
+    "datatype": "Time"
+  },
+  "place_of_creation": {
+    "pid": "P4",
+    "datatype": "String"
+  },
+  "part_of_collection": {
+    "pid": "P5",
+    "datatype": "Item"
+  },
+  "keywords": {
+    "pid": "P6",
+    "datatype": "String"
+  },
+  "color": {
+    "pid": "P7",
+    "datatype": "String"
+  },
+  "collection_method": {
+    "pid": "P8",
+    "datatype": "String"
+  },
+  "registration_date": {
+    "pid": "P9",
+    "datatype": "Time"
+  },
+  "documenter": {
+    "pid": "P10",
+    "datatype": "String"
+  },
+  "notes": {
+    "pid": "P11",
+    "datatype": "String"
+  },
+  "an_project": {
+    "pid": "P12",
+    "datatype": "String"
+  },
+  "same_as": {
+    "pid": "P13",
+    "datatype": "URL"
+  },
+  "_classes": {
+    "digital_object": {
+      "qid": "Q1",
+      "label": "digital object",
+      "description": "an archival digital object documented in the Archipelago Knowledge Base"
+    },
+    "collection": {
+      "qid": "Q2",
+      "label": "collection",
+      "description": "a documentary collection in the Archipelago Knowledge Base"
+    }
+  }
+}
