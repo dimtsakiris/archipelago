@@ -51,6 +51,12 @@
     "pid": "P13",
     "datatype": "URL"
   },
+  "identifier": {
+    "pid": "P14",
+    "datatype": "String",
+    "added": "2026-08-07",
+    "note": "Authoritative reconciliation key against the source spreadsheet's 'identifier' column. Added after discovering duplicate/missing items from partial import failures; every item should carry a unique value here."
+  },
   "_classes": {
     "digital_object": {
       "qid": "Q1",

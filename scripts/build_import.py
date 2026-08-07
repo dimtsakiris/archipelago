@@ -1,11 +1,13 @@
-﻿"""Build QuickStatements import batches from Amorgos collection data."""
+"""Build QuickStatements import batches from Amorgos collection data."""
 import argparse
 import json
 import re
 import os
 import pandas as pd
 
+# Change to parent directory to find data files
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 print("Script started! Working directory:", os.getcwd())
 
 ITEMS_CSV = "items_clean.csv"
@@ -55,6 +57,11 @@ def build_collections_qs(pm):
     with open("collections_import.qs", "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print(f"✅ Wrote collections_import.qs ({len(df)} collections).")
+
+    template = {slug: None for slug in df["collection_slug"]}
+    with open(COLLECTION_QID_MAP, "w", encoding="utf-8") as f:
+        json.dump(template, f, ensure_ascii=False, indent=2)
+    print(f"✅ Wrote {COLLECTION_QID_MAP} template.")
 
 def build_items_qs(pm):
     with open(COLLECTION_QID_MAP, encoding="utf-8") as f:

@@ -1,5 +1,50 @@
 {
-  "hozoviotissa": "Q3",
-  "ioannis i vekris": "Q4",
-  "skopelitis": "Q5"
+  "note": "Final, verified Q-ID mapping as of 2026-08-07. Every item has a unique P14 (Αναγνωριστικό/Identifier) statement matching its source Excel 'identifier' column - this is now the authoritative reconciliation key.",
+  "properties": {
+    "P1": "instance_of (είναι στιγμιότυπο)",
+    "P2": "creator (Δημιουργός)",
+    "P3": "date_of_creation (Ημερομηνία δημιουργίας)",
+    "P4": "place (Τόπος δημιουργίας)",
+    "P5": "part_of_collection (Μέρος συλλογής)",
+    "P6": "keywords (Λέξεις-κλειδιά)",
+    "P7": "color (Χρώμα)",
+    "P8": "collection_method (Μέθοδος συλλογής)",
+    "P9": "registration_date (Ημερομηνία καταχώρησης)",
+    "P10": "documenter (Τεκμηριωτής)",
+    "P11": "notes (Σημειώσεις)",
+    "P12": "AN_project (Έργο AN)",
+    "P13": "same_as (Ίδιο με)",
+    "P14": "identifier (Αναγνωριστικό) - NEW, added 2026-08-07 for reconciliation"
+  },
+  "items": {
+    "Q1": "digital object class (ψηφιακό αντικείμενο)",
+    "Q2": "collection class (συλλογή)",
+    "Q3": "Hozoviotissa collection (Επαγγελματικός Αλιευτικός Σύλλογος Αμοργού) - 103 items",
+    "Q4": "Ioannis Bekris collection (Ιωάννης Η. Βεκρής) - 12 items",
+    "Q5": "Skopelitis collection (Γιάννης Σκοπελίτης) - 35 items"
+  },
+  "item_qid_ranges": {
+    "hozoviotissa_original": "Q6-Q108 minus the ones listed in replaced_items (most of the 103 Hozoviotissa items)",
+    "bekris_original": "Q109-Q120 (12 items, minus Q110 which was replaced)",
+    "skopelitis_original": "Q121-Q155 (35 items, minus the ones in replaced_items)"
+  },
+  "replaced_items": {
+    "note": "These planned Q-IDs (from the original Q6-Q155 range) failed to create during the original import and were recreated with new Q-IDs. Old ID is retired/nonexistent.",
+    "Q24": "Q351", "Q25": "Q352", "Q26": "Q353", "Q27": "Q354", "Q28": "Q355",
+    "Q29": "Q356", "Q30": "Q357", "Q32": "Q358", "Q40": "Q359", "Q41": "Q360",
+    "Q42": "Q361", "Q63": "Q362", "Q64": "Q363", "Q73": "Q364", "Q75": "Q365",
+    "Q76": "Q366", "Q77": "Q367", "Q78": "Q368", "Q79": "Q369", "Q80": "Q370",
+    "Q81": "Q371", "Q104": "Q372", "Q110": "Q373",
+    "Q34": "Q430", "Q35": "Q431", "Q36": "Q432", "Q39": "Q433",
+    "Q55": "Q434or435", "Q57": "Q434or435", "Q58": "Q436or437", "Q60": "Q436or437",
+    "Q134": "Q429",
+    "verification_note": "Exact new IDs for Q55,57,58,60,62,65,66,72,74,82,83,99,113,135-140,149 need re-confirmation via P14 lookup - see verify_replaced_items.sparql"
+  },
+  "deleted_orphans": {
+    "note": "These Q-IDs existed as duplicate/broken items from earlier failed import attempts (3 Aug and 7 Aug 2026 sessions). Their P1 statement was removed on 2026-08-07 so they no longer appear in any P1=Q1 query. The pages themselves still exist (no delete rights) but are inert.",
+    "ids": ["Q156", "Q160", "Q162", "Q165", "Q166", "Q167", "Q170", "Q210",
+            "Q375","Q376","Q377","Q378","Q379","Q380","Q381","Q383",
+            "Q387","Q388","Q389","Q390","Q391","Q392","Q393","Q395","Q396"]
+  },
+  "reconciliation_query": "SELECT (COUNT(DISTINCT ?id) AS ?uniqueIdentifiers) WHERE { ?item wdt:P1 wd:Q1 . ?item wdt:P14 ?id . } -- should always return 150"
 }
