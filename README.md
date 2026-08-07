@@ -41,6 +41,7 @@ Excel workbook.
 ## Status
 
 - ✅ Data audit, automated ingestion, SPARQL query interface — complete
+
 - ✅ Data integrity: 150/150 source rows confirmed present, each with a
   unique `P14` identifier (7 Aug 2026 — see `SESSION_2026-08-07.md`)
 - ⏳ Audio/video/3D plugin check — pending
@@ -58,3 +59,4 @@ SELECT (COUNT(DISTINCT ?id) AS ?uniqueIdentifiers) WHERE {
 }
 # Expect: 150
 ```
+https://dimtsakiris.github.io/archipelago/sparql-interface.html
