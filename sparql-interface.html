@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archipelago Wikibase - SPARQL Query Interface</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+    header p {
+      font-size: 14px;
+      color: #666;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .query-editor {
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 13px;
+      width: 100%;
+      min-height: 250px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      color: #333;
+      resize: vertical;
+      line-height: 1.5;
+    }
+    .query-editor:focus {
+      outline: none;
+      border-color: #0066cc;
+      background: #fff;
+    }
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 13px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    button:hover {
+      background: #f0f0f0;
+      border-color: #999;
+    }
+    button.primary {
+      background: #0066cc;
+      color: white;
+      border-color: #0066cc;
+    }
+    button.primary:hover {
+      background: #0052a3;
+      border-color: #0052a3;
+    }
+    .status-area {
+      margin: 15px 0;
+      min-height: 20px;
+    }
+    .message {
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .success {
+      background: #e6f5e6;
+      color: #1a7a1a;
+      border: 1px solid #b3e5b3;
+    }
+    .error {
+      background: #ffe6e6;
+      color: #7a1a1a;
+      border: 1px solid #e5b3b3;
+    }
+    .loading {
+      background: #e6f0ff;
+      color: #0052a3;
+      border: 1px solid #b3d9ff;
+    }
+    .results-section {
+      margin-top: 30px;
+      display: none;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .stat {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0066cc;
+    }
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .results-table th {
+      background: #f0f0f0;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-weight: 600;
+      color: #333;
+    }
+    .results-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+    }
+    .results-table tr:hover {
+      background: #f9f9f9;
+    }
+    .results-table a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .results-table a:hover {
+      text-decoration: underline;
+    }
+    .spinner {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #0066cc;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .template-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    .template-label {
+      font-size: 12px;
+      color: #666;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Archipelago Knowledge Base</h1>
+      <p>SPARQL Query Interface — Query semantic data from Wikibase</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="font-size: 16px; margin-bottom: 12px;">Query Templates</h2>
+      <div class="template-label">Quick-start queries:</div>
+      <div class="template-buttons">
+        <button onclick="loadTemplate('all-items')">📋 All Items (100)</button>
+        <button onclick="loadTemplate('hozoviotissa')">🏛️ Hozoviotissa</button>
+        <button onclick="loadTemplate('creators')">👤 Creators</button>
+        <button onclick="loadTemplate('places')">📍 Places</button>
+        <button onclick="loadTemplate('keywords')">🏷️ Keywords</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: 16px; margin-bottom: 12px;">SPARQL Editor</h2>
+      <textarea class="query-editor" id="queryEditor" placeholder="PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+}
+LIMIT 50"></textarea>
+
+      <div class="button-group">
+        <button class="primary" onclick="executeQuery()">▶ Execute (Ctrl+Enter)</button>
+        <button onclick="clearQuery()">✕ Clear</button>
+        <button onclick="copyQuery()">📋 Copy Query</button>
+      </div>
+
+      <div class="status-area" id="statusArea"></div>
+    </div>
+
+    <div class="card results-section" id="resultsSection">
+      <h2 style="font-size: 16px; margin-bottom: 15px;">Results</h2>
+      <div class="stats" id="stats"></div>
+      <div id="resultsContainer"></div>
+    </div>
+  </div>
+
+  <div class="container footer">
+    <p>Archipelago Wikibase — Digital Cyclades Project</p>
+    <p style="margin-top: 8px;">Instance: <a href="https://archipelago-wikibase.wikibase.cloud" target="_blank" style="color: #0066cc;">archipelago-wikibase.wikibase.cloud</a></p>
+  </div>
+
+  <script>
+    const SPARQL_ENDPOINT = 'https://archipelago-wikibase.wikibase.cloud/query/sparql';
+
+    const TEMPLATES = {
+      'all-items': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?itemLabel ?creator ?place WHERE {
+  ?item wdt:P1 wd:Q1 .
+  OPTIONAL { ?item wdt:P2 ?creator . }
+  OPTIONAL { ?item wdt:P4 ?place . }
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+}
+LIMIT 100`,
+
+      'hozoviotissa': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?itemLabel ?creator WHERE {
+  ?item wdt:P5 wd:Q3 .
+  ?item wdt:P2 ?creator .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+}`,
+
+      'creators': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?creator (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item wdt:P2 ?creator .
+}
+GROUP BY ?creator
+ORDER BY DESC(?count)`,
+
+      'places': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?place (COUNT(?item) AS ?itemCount) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item wdt:P4 ?place .
+}
+GROUP BY ?place
+ORDER BY DESC(?itemCount)`,
+
+      'keywords': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?keyword (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item wdt:P6 ?keyword .
+}
+GROUP BY ?keyword
+ORDER BY DESC(?count)
+LIMIT 50`
+    };
+
+    function loadTemplate(name) {
+      if (TEMPLATES[name]) {
+        document.getElementById('queryEditor').value = TEMPLATES[name];
+      }
+    }
+
+    function clearQuery() {
+      document.getElementById('queryEditor').value = '';
+      document.getElementById('statusArea').innerHTML = '';
+      document.getElementById('resultsSection').style.display = 'none';
+    }
+
+    function copyQuery() {
+      const query = document.getElementById('queryEditor').value;
+      navigator.clipboard.writeText(query);
+      showMessage('Query copied to clipboard', 'success');
+    }
+
+    async function executeQuery() {
+      const query = document.getElementById('queryEditor').value.trim();
+      if (!query) {
+        showMessage('Please enter a SPARQL query', 'error');
+        return;
+      }
+
+      showMessage('⏳ Executing query...', 'loading');
+      document.getElementById('resultsSection').style.display = 'none';
+
+      try {
+        const response = await fetch(SPARQL_ENDPOINT, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Accept': 'application/sparql-results+json'
+          },
+          body: 'query=' + encodeURIComponent(query)
+        });
+
+        if (!response.ok) {
+          throw new Error(`SPARQL error: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        displayResults(data);
+        showMessage('✓ Query executed successfully', 'success');
+      } catch (error) {
+        showMessage('✕ Error: ' + error.message, 'error');
+      }
+    }
+
+    function displayResults(data) {
+      const results = data.results.bindings;
+      const vars = data.head.vars;
+
+      if (results.length === 0) {
+        showMessage('No results found', 'error');
+        return;
+      }
+
+      const statsHtml = `
+        <div class="stat">
+          <div class="stat-label">Results</div>
+          <div class="stat-value">${results.length}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Columns</div>
+          <div class="stat-value">${vars.length}</div>
+        </div>
+      `;
+      document.getElementById('stats').innerHTML = statsHtml;
+
+      let tableHtml = `
+        <table class="results-table">
+          <thead>
+            <tr>
+              ${vars.map(v => `<th>${v}</th>`).join('')}
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      results.forEach(row => {
+        tableHtml += '<tr>';
+        vars.forEach(v => {
+          const value = row[v];
+          if (!value) {
+            tableHtml += '<td>—</td>';
+          } else if (value.type === 'uri') {
+            const label = value.value.split('/').pop();
+            tableHtml += `<td><a href="${value.value}" target="_blank">${label}</a></td>`;
+          } else {
+            tableHtml += `<td>${escapeHtml(value.value)}</td>`;
+          }
+        });
+        tableHtml += '</tr>';
+      });
+
+      tableHtml += '</tbody></table>';
+      document.getElementById('resultsContainer').innerHTML = tableHtml;
+      document.getElementById('resultsSection').style.display = 'block';
+    }
+
+    function showMessage(message, type) {
+      const statusArea = document.getElementById('statusArea');
+      statusArea.innerHTML = `<div class="message ${type}">${message}</div>`;
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        executeQuery();
+      }
+    });
+  </script>
+</body>
+</html>
