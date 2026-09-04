@@ -218,12 +218,17 @@
       <h2 style="font-size: 16px; margin-bottom: 12px;">Query Templates</h2>
       <div class="template-label">Quick-start queries:</div>
       <div class="template-buttons">
-        <button onclick="loadTemplate('all-items')">📋 All Items (100)</button>
-        <button onclick="loadTemplate('hozoviotissa')">🏛️ Hozoviotissa</button>
+        <button onclick="loadTemplate('stats')">📊 Stats by Project</button>
+        <button onclick="loadTemplate('all-items')">📋 All Items</button>
+        <button onclick="loadTemplate('all-collections')">🗂️ All Collections</button>
+        <button onclick="loadTemplate('amorgos-only')">🎣 Amorgos Only</button>
+        <button onclick="loadTemplate('mining-only')">⛏️ Mining Only</button>
+        <button onclick="loadTemplate('by-digital-type')">🎬 By Digital Type</button>
         <button onclick="loadTemplate('creators')">👤 Creators</button>
         <button onclick="loadTemplate('places')">📍 Places</button>
         <button onclick="loadTemplate('keywords')">🏷️ Keywords</button>
       </div>
+      <p style="font-size:12px;color:#666;margin-top:8px;">See the full <a href="#query-reference" style="color:#0066cc;">query reference</a> below for all available queries and what each one does.</p>
     </div>
 
     <div class="card">
@@ -246,6 +251,102 @@ LIMIT 50"></textarea>
       </div>
 
       <div class="status-area" id="statusArea"></div>
+    </div>
+
+    <div class="card" id="query-reference">
+      <h2 style="font-size: 16px; margin-bottom: 4px;">📖 Query Reference — All Available Queries</h2>
+      <p style="font-size: 13px; color: #666; margin-bottom: 16px;">Every pre-built query, what it returns, and why you'd use it. Click "Load" to put it in the editor above, then Execute.</p>
+      <table class="results-table" style="font-size: 13px;">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Query</th>
+            <th>What it returns</th>
+            <th style="width: 90px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Stats by Project</strong></td>
+            <td>Total item count, broken down by AN Project (Amorgos vs Mining in the Cyclades vs any future project).</td>
+            <td><button onclick="loadTemplate('stats')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>All Items</strong></td>
+            <td>Every digital object (both datasets), with label, creator, and place. Capped at 100 — raise the LIMIT for more.</td>
+            <td><button onclick="loadTemplate('all-items')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>All Collections</strong></td>
+            <td>Every collection (19 total: 3 Amorgos + 16 Mining), with its item count.</td>
+            <td><button onclick="loadTemplate('all-collections')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Amorgos Only</strong></td>
+            <td>Just the original fishing-heritage items (identified as having no AN Project value set).</td>
+            <td><button onclick="loadTemplate('amorgos-only')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Mining Only</strong></td>
+            <td>Just the Mining in the Cyclades: Digital Traces items, with place.</td>
+            <td><button onclick="loadTemplate('mining-only')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Hozoviotissa</strong></td>
+            <td>Items belonging specifically to the Hozoviotissa collection (Q3), with creator.</td>
+            <td><button onclick="loadTemplate('hozoviotissa')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>By Digital Type</strong></td>
+            <td>Count of items per type — Εικόνα (image), Βίντεο (video), Ήχος (audio), 3D. Uses P16.</td>
+            <td><button onclick="loadTemplate('by-digital-type')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Videos / Audio / 3D</strong></td>
+            <td>Just the non-photo items, with their external source URL (P15) — the actual Vimeo/Mixcloud/Polycam link.</td>
+            <td><button onclick="loadTemplate('videos-audio-3d')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Creators</strong></td>
+            <td>Every distinct creator name, with how many items each has, most-prolific first.</td>
+            <td><button onclick="loadTemplate('creators')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Places</strong></td>
+            <td>Every distinct place, with item counts.</td>
+            <td><button onclick="loadTemplate('places')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Keywords</strong></td>
+            <td>Most-used keywords across all items (top 50).</td>
+            <td><button onclick="loadTemplate('keywords')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>By Documenter</strong></td>
+            <td>Item counts grouped by who documented them (P10) — e.g. Πάρις Τσιριγώτης, Jacob Moe.</td>
+            <td><button onclick="loadTemplate('by-documenter')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Missing Date</strong></td>
+            <td>Data-quality check: items that have no date of creation (P3) recorded at all.</td>
+            <td><button onclick="loadTemplate('missing-date')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Lookup by Identifier</strong></td>
+            <td>Find the exact Wikibase item for a known source-spreadsheet identifier (P14) — edit the value in the query.</td>
+            <td><button onclick="loadTemplate('lookup-identifier')">Load</button></td>
+          </tr>
+          <tr>
+            <td><strong>Items by Island</strong></td>
+            <td>Mining-dataset items filtered by place text (example: Milos) — edit the CONTAINS(...) text for other islands.</td>
+            <td><button onclick="loadTemplate('items-by-island')">Load</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size: 12px; color: #999; margin-top: 12px;">
+        Property reference: P1 instance_of · P2 creator · P3 date · P4 place · P5 part_of_collection ·
+        P6 keywords · P10 documenter · P12 AN Project · P14 identifier · P15 source URL · P16 digital object type.
+        Q1 = digital object, Q2 = collection.
+      </p>
     </div>
 
     <div class="card results-section" id="resultsSection">
@@ -277,6 +378,27 @@ SELECT ?item ?itemLabel ?creator ?place WHERE {
 }
 LIMIT 100`,
 
+      'stats': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?an_project (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  OPTIONAL { ?item wdt:P12 ?an_project . }
+}
+GROUP BY ?an_project`,
+
+      'all-collections': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?coll ?collLabel (COUNT(?item) AS ?itemCount) WHERE {
+  ?coll wdt:P1 wd:Q2 .
+  OPTIONAL { ?coll rdfs:label ?collLabel . FILTER(LANG(?collLabel) = "el") }
+  OPTIONAL { ?item wdt:P5 ?coll . }
+}
+GROUP BY ?coll ?collLabel
+ORDER BY ?coll`,
+
       'hozoviotissa': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
 PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -286,6 +408,57 @@ SELECT ?item ?itemLabel ?creator WHERE {
   ?item wdt:P2 ?creator .
   ?item rdfs:label ?itemLabel .
   FILTER(LANG(?itemLabel) = "el")
+}`,
+
+      'amorgos-only': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Amorgos fishing-heritage items: no AN Project value set
+SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+  FILTER NOT EXISTS { ?item wdt:P12 ?anything . }
+}
+LIMIT 200`,
+
+      'mining-only': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Mining in the Cyclades: Digital Traces items
+SELECT ?item ?itemLabel ?place WHERE {
+  ?item wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" .
+  ?item wdt:P1 wd:Q1 .
+  OPTIONAL { ?item wdt:P4 ?place . }
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+}
+LIMIT 200`,
+
+      'by-digital-type': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?digitalType (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  OPTIONAL { ?item wdt:P16 ?digitalType . }
+}
+GROUP BY ?digitalType
+ORDER BY DESC(?count)`,
+
+      'videos-audio-3d': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Items that are video, audio, or 3D (have a source URL to external media)
+SELECT ?item ?itemLabel ?digitalType ?sourceUrl WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item wdt:P15 ?sourceUrl .
+  ?item wdt:P16 ?digitalType .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+  FILTER(?digitalType != "Εικόνα")
 }`,
 
       'creators': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
@@ -317,7 +490,53 @@ SELECT ?keyword (COUNT(?item) AS ?count) WHERE {
 }
 GROUP BY ?keyword
 ORDER BY DESC(?count)
-LIMIT 50`
+LIMIT 50`,
+
+      'by-documenter': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+
+SELECT ?documenter (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item wdt:P10 ?documenter .
+}
+GROUP BY ?documenter
+ORDER BY DESC(?count)`,
+
+      'missing-date': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Items with no date of creation (P3) recorded
+SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P1 wd:Q1 .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+  FILTER NOT EXISTS { ?item wdt:P3 ?date . }
+}
+LIMIT 100`,
+
+      'lookup-identifier': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Find an item by its original spreadsheet identifier (edit the value below)
+SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P14 "cmt_amorgos_archival_hozoviotissa_001" .
+  OPTIONAL { ?item rdfs:label ?itemLabel . FILTER(LANG(?itemLabel) = "el") }
+}`,
+
+      'items-by-island': `PREFIX wd: <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Mining dataset items on Milos (change the place text for other islands)
+SELECT ?item ?itemLabel ?place WHERE {
+  ?item wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" .
+  ?item wdt:P4 ?place .
+  FILTER(CONTAINS(?place, "Μήλο"))
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "el")
+}`
     };
 
     function loadTemplate(name) {
