@@ -1,0 +1,1243 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wd: <https://archipelago-wikibase.wikibase.cloud/entity/> .
+@prefix wdt: <https://archipelago-wikibase.wikibase.cloud/prop/direct/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wd:Q1 a rdfs:Class ;
+    rdfs:label "ψηφιακό αντικείμενο"@el,
+        "digital object"@en ;
+    rdfs:subClassOf schema:CreativeWork .
+
+wd:Q2 a rdfs:Class ;
+    rdfs:label "συλλογή"@el,
+        "collection"@en ;
+    rdfs:subClassOf dcat:Dataset .
+
+wd:Q109 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Ηλίας Βεκρής ψαρεύει χταπόδια"@el ;
+    dcterms:created "2000"^^xsd:gYear ;
+    dcterms:creator "Ιωάννης Η. Βεκρής" ;
+    dcterms:description "Ψαρεύοντας για χταπόδια στον Άγιο Παύλο. Ηλίας Βεκρής (στα δεξια)."@el ;
+    dcterms:identifier "cmt_amorgos_archival_ioannis i vekris_001" ;
+    dcterms:isPartOf wd:Q4 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Ηλίας Βεκρής ψαρεύει χταπόδια"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q109> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 2000"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 2000" ;
+    wdt:P14 "cmt_amorgos_archival_ioannis i vekris_001" ;
+    wdt:P2 "Ιωάννης Η. Βεκρής" ;
+    wdt:P3 "2000"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q4 ;
+    schema:description "Ψαρεύοντας για χταπόδια στον Άγιο Παύλο. Ηλίας Βεκρής (στα δεξια)."@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q109> .
+
+wd:Q121 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι \"Χοζοβιώτισσα\""@el ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_001" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Το καΐκι \"Χοζοβιώτισσα\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q121> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 1980" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_001" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q5 ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q121> .
+
+wd:Q486 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Φόρτωση μαρμάρου σε καΐκι στη Βαθή"@el,
+        "Loading marble onto a caique at Vathy"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1931"^^xsd:gYear ;
+    dcterms:creator "Αρχείο επιχείρησης Καραγεώργη, μέσω Αλέκου Φλωράκη" ;
+    dcterms:description "Φόρτωση μαρμάρου σε καΐκι με βαρούλκο στη Βαθή."@el,
+        "Loading marble onto a caique by winch at Vathy."@en ;
+    dcterms:identifier "ecdt_tinos_karageorgis_001" ;
+    dcterms:isPartOf wd:Q438 ;
+    dcterms:spatial "Βαθή, Τήνος" ;
+    dcterms:title "Φόρτωση μαρμάρου σε καΐκι στη Βαθή"@el,
+        "Loading marble onto a caique at Vathy"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q486> ;
+    skos:note "Ημερομηνία (αρχική μορφή): περ. 1931"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P11 "περ. 1931" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_tinos_karageorgis_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_tinos_florakis_karageorgis_01.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Αρχείο επιχείρησης Καραγεώργη, μέσω Αλέκου Φλωράκη" ;
+    wdt:P3 "1931"^^xsd:gYear ;
+    wdt:P4 "Βαθή, Τήνος" ;
+    wdt:P5 wd:Q438 ;
+    wdt:P6 "μάρμαρο, λατομείο, βαρούλκο, καΐκι, Βαθή" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_tinos_florakis_karageorgis_01.jpg> ;
+    schema:description "Φόρτωση μαρμάρου σε καΐκι με βαρούλκο στη Βαθή."@el,
+        "Loading marble onto a caique by winch at Vathy."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Βαθή"@el,
+        "βαρούλκο"@el,
+        "καΐκι"@el,
+        "λατομείο"@el,
+        "μάρμαρο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q486> .
+
+wd:Q496 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Κοπή μαρμάρινου όγκου στο λατομείο Αχινών"@el,
+        "Marble block quarrying at Achinous"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:creator "Αρχείο Ξενοφοντίδη, μέσω Αλέκου Φλωράκη" ;
+    dcterms:description "Κοπή μαρμάρινου όγκου στο λατομείο των Αχινών."@el,
+        "Quarrying of a marble block at the Achinous quarry."@en ;
+    dcterms:identifier "ecdt_tinos_xenofontidis_001" ;
+    dcterms:isPartOf wd:Q439 ;
+    dcterms:spatial "Αχινοί, Τήνος" ;
+    dcterms:title "Κοπή μαρμάρινου όγκου στο λατομείο Αχινών"@el,
+        "Marble block quarrying at Achinous"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q496> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_tinos_xenofontidis_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_tinos_florakis_xenofontidis_01.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Αρχείο Ξενοφοντίδη, μέσω Αλέκου Φλωράκη" ;
+    wdt:P4 "Αχινοί, Τήνος" ;
+    wdt:P5 wd:Q439 ;
+    wdt:P6 "μάρμαρο, λατομείο, Αχινοί" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_tinos_florakis_xenofontidis_01.jpg> ;
+    schema:description "Κοπή μαρμάρινου όγκου στο λατομείο των Αχινών."@el,
+        "Quarrying of a marble block at the Achinous quarry."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Αχινοί"@el,
+        "λατομείο"@el,
+        "μάρμαρο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q496> .
+
+wd:Q505 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Λατομείο των Αχινών, 1984"@el,
+        "Achinous quarry, 1984"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1984"^^xsd:gYear ;
+    dcterms:creator "Αλέκος Φλωράκης" ;
+    dcterms:description "Λατομείο των Αχινών."@el,
+        "View of the Achinous quarry."@en ;
+    dcterms:identifier "ecdt_tinos_florakis_001" ;
+    dcterms:isPartOf wd:Q440 ;
+    dcterms:spatial "Αχινοί, Τήνος" ;
+    dcterms:title "Λατομείο των Αχινών, 1984"@el,
+        "Achinous quarry, 1984"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q505> ;
+    skos:note "Ημερομηνία (αρχική μορφή): περ. 1984"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P11 "περ. 1984" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_tinos_florakis_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/Achinous_1984_1.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Αλέκος Φλωράκης" ;
+    wdt:P3 "1984"^^xsd:gYear ;
+    wdt:P4 "Αχινοί, Τήνος" ;
+    wdt:P5 wd:Q440 ;
+    wdt:P6 "μάρμαρο, λατομείο, Αχινοί, Φλωράκης" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/Achinous_1984_1.jpg> ;
+    schema:description "Λατομείο των Αχινών."@el,
+        "View of the Achinous quarry."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Αχινοί"@el,
+        "Φλωράκης"@el,
+        "λατομείο"@el,
+        "μάρμαρο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q505> .
+
+wd:Q514 a schema:CreativeWork,
+        schema:VideoObject ;
+    rdfs:label "«Τήνια Πετρώα Γη» (απόσπασμα)"@el,
+        "Tinian Land of Rock (excerpt)"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:creator "Γιώργος Αλεξόπουλος" ;
+    dcterms:description "Απόσπασμα από το ντοκιμαντέρ «Τήνια Πετρώα Γη» του Γιώργου Αλεξόπουλου, για το λατομικό τοπίο της Τήνου."@el,
+        "Excerpt from the documentary Tinian Land of Rock by Yorgos Alexopoulos, on Tinos's marble-quarrying landscape."@en ;
+    dcterms:identifier "ecdt_tinos_alexopoulos_001" ;
+    dcterms:isPartOf wd:Q441 ;
+    dcterms:spatial "Τήνος" ;
+    dcterms:title "«Τήνια Πετρώα Γη» (απόσπασμα)"@el,
+        "Tinian Land of Rock (excerpt)"@en ;
+    dcterms:type dcmitype:MovingImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q514> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_tinos_alexopoulos_001" ;
+    wdt:P15 <https://vimeo.com/1072925554> ;
+    wdt:P16 "Βίντεο" ;
+    wdt:P2 "Γιώργος Αλεξόπουλος" ;
+    wdt:P4 "Τήνος" ;
+    wdt:P5 wd:Q441 ;
+    wdt:P6 "μάρμαρο, λατομείο, ντοκιμαντέρ, Τήνος, Αλεξόπουλος" ;
+    schema:contentUrl <https://vimeo.com/1072925554> ;
+    schema:description "Απόσπασμα από το ντοκιμαντέρ «Τήνια Πετρώα Γη» του Γιώργου Αλεξόπουλου, για το λατομικό τοπίο της Τήνου."@el,
+        "Excerpt from the documentary Tinian Land of Rock by Yorgos Alexopoulos, on Tinos's marble-quarrying landscape."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Αλεξόπουλος"@el,
+        "Τήνος"@el,
+        "λατομείο"@el,
+        "μάρμαρο"@el,
+        "ντοκιμαντέρ"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q514> .
+
+wd:Q516 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Γραμμώσεις τεκτονικής ολίσθησης στο Στρογγυλό"@el,
+        "Tectonic slip lines at Strongilo"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:creator "Άγγελος Σινάνης" ;
+    dcterms:description "Γραμμώσεις τεκτονικής ολίσθησης στο Στρογγυλό, Αντίπαρος."@el,
+        "Tectonic slip lines at Strongilo, Antiparos."@en ;
+    dcterms:identifier "ecdt_antiparos_sinanis_001" ;
+    dcterms:isPartOf wd:Q442 ;
+    dcterms:spatial "Στρογγυλό, Αντίπαρος" ;
+    dcterms:title "Γραμμώσεις τεκτονικής ολίσθησης στο Στρογγυλό"@el,
+        "Tectonic slip lines at Strongilo"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q516> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_antiparos_sinanis_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/1_Antiparos.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Άγγελος Σινάνης" ;
+    wdt:P4 "Στρογγυλό, Αντίπαρος" ;
+    wdt:P5 wd:Q442 ;
+    wdt:P6 "γεωλογία, τεκτονική, Στρογγυλό, Αντίπαρος" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/1_Antiparos.jpg> ;
+    schema:description "Γραμμώσεις τεκτονικής ολίσθησης στο Στρογγυλό, Αντίπαρος."@el,
+        "Tectonic slip lines at Strongilo, Antiparos."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Αντίπαρος"@el,
+        "Στρογγυλό"@el,
+        "γεωλογία"@el,
+        "τεκτονική"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q516> .
+
+wd:Q525 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Σμυριδεργάτες σε αποβάθρα φόρτωσης στη Λυώνα, 1910"@el,
+        "Emery workers and loading dock at Lionas beach, 1910"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1910"^^xsd:gYear ;
+    dcterms:creator "Μανώλης Δ. Μανωλάς" ;
+    dcterms:description "Πλήθος σμυριδεργατών στους σωρούς σμύριδας, με την αποβάθρα φόρτωσης στο βάθος, παραλία Λυώνα."@el,
+        "Crowd of emery workers with the loading dock visible in the background at Lionas beach."@en ;
+    dcterms:identifier "ecdt_naxos_manolas_001" ;
+    dcterms:isPartOf wd:Q456 ;
+    dcterms:spatial "Λυώνα, Νάξος" ;
+    dcterms:title "Σμυριδεργάτες σε αποβάθρα φόρτωσης στη Λυώνα, 1910"@el,
+        "Emery workers and loading dock at Lionas beach, 1910"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q525> ;
+    skos:note "Ημερομηνία (αρχική μορφή): περ. 1910"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P11 "περ. 1910" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_naxos_manolas_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/1910-ΠΑΡΑΛΙΑ-ΛΥΩΝΑ-ΣΜΥΡΙΔΕΡΓΑΤΕΣ-ΣΤΟΥΣ-ΣΩΡΟΥΣ-ΚΑΙ-ΣΤΟ-ΒΑΘΟΣ-Η-ΣΚΑΛΑ-ΦΟΡΤΩΣΗΣ.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Μανώλης Δ. Μανωλάς" ;
+    wdt:P3 "1910"^^xsd:gYear ;
+    wdt:P4 "Λυώνα, Νάξος" ;
+    wdt:P5 wd:Q456 ;
+    wdt:P6 "σμύριδα, εργάτες, Λυώνα, αποβάθρα" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/1910-ΠΑΡΑΛΙΑ-ΛΥΩΝΑ-ΣΜΥΡΙΔΕΡΓΑΤΕΣ-ΣΤΟΥΣ-ΣΩΡΟΥΣ-ΚΑΙ-ΣΤΟ-ΒΑΘΟΣ-Η-ΣΚΑΛΑ-ΦΟΡΤΩΣΗΣ.jpg> ;
+    schema:description "Πλήθος σμυριδεργατών στους σωρούς σμύριδας, με την αποβάθρα φόρτωσης στο βάθος, παραλία Λυώνα."@el,
+        "Crowd of emery workers with the loading dock visible in the background at Lionas beach."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Λυώνα"@el,
+        "αποβάθρα"@el,
+        "εργάτες"@el,
+        "σμύριδα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q525> .
+
+wd:Q538 a schema:AudioObject,
+        schema:CreativeWork ;
+    rdfs:label "Συνέντευξη με τον Τζόκα Ξυδού (1995)"@el,
+        "Interview with Tzokas Xydous (1995)"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1995"^^xsd:gYear ;
+    dcterms:creator "Μεταλλευτικό Μουσείο Μήλου" ;
+    dcterms:description "Ηχογραφημένη συνέντευξη προφορικής ιστορίας με τον Τζόκα Ξυδού, 1995."@el,
+        "Oral history interview with Tzokas Xydous, recorded in 1995."@en ;
+    dcterms:identifier "ecdt_milos_mining_museum_001" ;
+    dcterms:isPartOf wd:Q444 ;
+    dcterms:spatial "Μήλος" ;
+    dcterms:title "Συνέντευξη με τον Τζόκα Ξυδού (1995)"@el,
+        "Interview with Tzokas Xydous (1995)"@en ;
+    dcterms:type dcmitype:Sound ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q538> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_milos_mining_museum_001" ;
+    wdt:P15 <https://www.mixcloud.com/archipelagonet/interview-with-tzokas-xydous-1995/> ;
+    wdt:P16 "Ήχος" ;
+    wdt:P2 "Μεταλλευτικό Μουσείο Μήλου" ;
+    wdt:P3 "1995"^^xsd:gYear ;
+    wdt:P4 "Μήλος" ;
+    wdt:P5 wd:Q444 ;
+    wdt:P6 "προφορική ιστορία, συνέντευξη, Ξυδούς, εξόρυξη" ;
+    schema:contentUrl <https://www.mixcloud.com/archipelagonet/interview-with-tzokas-xydous-1995/> ;
+    schema:description "Ηχογραφημένη συνέντευξη προφορικής ιστορίας με τον Τζόκα Ξυδού, 1995."@el,
+        "Oral history interview with Tzokas Xydous, recorded in 1995."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Ξυδούς"@el,
+        "εξόρυξη"@el,
+        "προφορική ιστορία"@el,
+        "συνέντευξη"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q538> .
+
+wd:Q549 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Πορθμείο μεταφοράς από το ορυχείο Πολύαιγου, 1966"@el,
+        "Polyaigos mine transport ferry, 1966"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1966"^^xsd:gYear ;
+    dcterms:creator "Αρχείο επιχείρησης S&B, στο Μεταλλευτικό Μουσείο Μήλου" ;
+    dcterms:description "Πορθμείο ανοιχτού τύπου που χρησιμοποιούνταν για τη μεταφορά υλικών από το ορυχείο Πολύαιγου."@el,
+        "Ferry used to transport materials from the Polyaigos mine."@en ;
+    dcterms:identifier "ecdt_milos_sb_001" ;
+    dcterms:isPartOf wd:Q445 ;
+    dcterms:spatial "Πολύαιγος" ;
+    dcterms:title "Πορθμείο μεταφοράς από το ορυχείο Πολύαιγου, 1966"@el,
+        "Polyaigos mine transport ferry, 1966"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q549> ;
+    skos:note "Ημερομηνία (αρχική μορφή): περ. 1966"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P11 "περ. 1966" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_milos_sb_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_milos_mining-museum_46.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Αρχείο επιχείρησης S&B, στο Μεταλλευτικό Μουσείο Μήλου" ;
+    wdt:P3 "1966"^^xsd:gYear ;
+    wdt:P4 "Πολύαιγος" ;
+    wdt:P5 wd:Q445 ;
+    wdt:P6 "πορθμείο, μεταφορά, ορυχείο Πολύαιγου" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_milos_mining-museum_46.jpg> ;
+    schema:description "Πορθμείο ανοιχτού τύπου που χρησιμοποιούνταν για τη μεταφορά υλικών από το ορυχείο Πολύαιγου."@el,
+        "Ferry used to transport materials from the Polyaigos mine."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "μεταφορά"@el,
+        "ορυχείο Πολύαιγου"@el,
+        "πορθμείο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q549> .
+
+wd:Q558 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Συγκέντρωση Πρωτομαγιάς στο Εργατικό Κέντρο Μήλου"@el,
+        "May Day assembly at Milos Labor Center"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:creator "Εργατικό Κέντρο Μήλου" ;
+    dcterms:description "Συγκέντρωση Πρωτομαγιάς στο Εργατικό Κέντρο Μήλου."@el,
+        "May Day workers' assembly at the Milos Labor Center."@en ;
+    dcterms:identifier "ecdt_milos_labor_center_001" ;
+    dcterms:isPartOf wd:Q457 ;
+    dcterms:spatial "Μήλος" ;
+    dcterms:title "Συγκέντρωση Πρωτομαγιάς στο Εργατικό Κέντρο Μήλου"@el,
+        "May Day assembly at Milos Labor Center"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q558> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_milos_labor_center_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_milos_labor-center_06-1280x850.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Εργατικό Κέντρο Μήλου" ;
+    wdt:P4 "Μήλος" ;
+    wdt:P5 wd:Q457 ;
+    wdt:P6 "εργατικό κέντρο, Πρωτομαγιά, συγκέντρωση, Μήλος" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_milos_labor-center_06-1280x850.jpg> ;
+    schema:description "Συγκέντρωση Πρωτομαγιάς στο Εργατικό Κέντρο Μήλου."@el,
+        "May Day workers' assembly at the Milos Labor Center."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Μήλος"@el,
+        "Πρωτομαγιά"@el,
+        "εργατικό κέντρο"@el,
+        "συγκέντρωση"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q558> .
+
+wd:Q567 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Αρχιτεκτονικό σχέδιο γέφυρας φόρτωσης στο Μέγα Λιβάδι, 1955"@el,
+        "Architectural diagram of loading bridge at Mega Livadi, 1955"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "1955"^^xsd:gYear ;
+    dcterms:creator "Στέφανος Εξαδάκτυλος, μέσω Γενικών Αρχείων του Κράτους - ΓΑΚ Σύρου" ;
+    dcterms:description "Αρχιτεκτονικό σχέδιο γέφυρας φόρτωσης στο Μέγα Λιβάδι."@el,
+        "Architectural diagram of the loading bridge at Mega Livadi."@en ;
+    dcterms:identifier "ecdt_serifos_exadactylos_001" ;
+    dcterms:isPartOf wd:Q458 ;
+    dcterms:spatial "Μέγα Λιβάδι, Σέριφος" ;
+    dcterms:title "Αρχιτεκτονικό σχέδιο γέφυρας φόρτωσης στο Μέγα Λιβάδι, 1955"@el,
+        "Architectural diagram of loading bridge at Mega Livadi, 1955"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q567> ;
+    skos:note "Ημερομηνία (αρχική μορφή): περ. 1955"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P11 "περ. 1955" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_serifos_exadactylos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_serifos_GAK_exadactylos_01-1280x821.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Στέφανος Εξαδάκτυλος, μέσω Γενικών Αρχείων του Κράτους - ΓΑΚ Σύρου" ;
+    wdt:P3 "1955"^^xsd:gYear ;
+    wdt:P4 "Μέγα Λιβάδι, Σέριφος" ;
+    wdt:P5 wd:Q458 ;
+    wdt:P6 "σχέδιο, γέφυρα φόρτωσης, Μέγα Λιβάδι" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/ecdt_serifos_GAK_exadactylos_01-1280x821.jpg> ;
+    schema:description "Αρχιτεκτονικό σχέδιο γέφυρας φόρτωσης στο Μέγα Λιβάδι."@el,
+        "Architectural diagram of the loading bridge at Mega Livadi."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Μέγα Λιβάδι"@el,
+        "γέφυρα φόρτωσης"@el,
+        "σχέδιο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q567> .
+
+wd:Q576 a schema:3DModel,
+        schema:CreativeWork ;
+    rdfs:label "Δείγμα ορυκτού από μεταλλευτική έκθεση, Μέγα Λιβάδι"@el,
+        "Mineral sample from Mega Livadi mining exhibition"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Σοφία Ντώνα" ;
+    dcterms:description "Τρισδιάστατη σάρωση δείγματος ορυκτού από τη μεταλλευτική έκθεση στο Μέγα Λιβάδι."@el,
+        "3D scan of a mineral sample from the Mega Livadi mining exhibition."@en ;
+    dcterms:identifier "ecdt_serifos_dona_001" ;
+    dcterms:isPartOf wd:Q465 ;
+    dcterms:spatial "Μέγα Λιβάδι, Σέριφος" ;
+    dcterms:title "Δείγμα ορυκτού από μεταλλευτική έκθεση, Μέγα Λιβάδι"@el,
+        "Mineral sample from Mega Livadi mining exhibition"@en ;
+    dcterms:type dcmitype:PhysicalObject ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q576> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_serifos_dona_001" ;
+    wdt:P15 <https://poly.cam/capture/5432C9FA-837E-4C90-AAA7-E050A654BB91> ;
+    wdt:P16 "Τρισδιάστατο μοντέλο" ;
+    wdt:P2 "Σοφία Ντώνα" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Μέγα Λιβάδι, Σέριφος" ;
+    wdt:P5 wd:Q465 ;
+    wdt:P6 "δείγμα ορυκτού, τρισδιάστατη σάρωση, Μέγα Λιβάδι" ;
+    schema:contentUrl <https://poly.cam/capture/5432C9FA-837E-4C90-AAA7-E050A654BB91> ;
+    schema:description "Τρισδιάστατη σάρωση δείγματος ορυκτού από τη μεταλλευτική έκθεση στο Μέγα Λιβάδι."@el,
+        "3D scan of a mineral sample from the Mega Livadi mining exhibition."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Μέγα Λιβάδι"@el,
+        "δείγμα ορυκτού"@el,
+        "τρισδιάστατη σάρωση"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q576> .
+
+wd:Q583 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Δείγμα μαρμάρου από το λατομείο Βαθής"@el,
+        "Marble sample from Vathy quarry"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Δείγμα μαρμάρου από το λατομείο Βαθής."@el,
+        "Marble sample from the Vathy quarry."@en ;
+    dcterms:identifier "ecdt_acosta_tinos_001" ;
+    dcterms:isPartOf wd:Q460 ;
+    dcterms:spatial "Βαθή, Τήνος" ;
+    dcterms:title "Δείγμα μαρμάρου από το λατομείο Βαθής"@el,
+        "Marble sample from Vathy quarry"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q583> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_acosta_tinos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC04386_edit.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Βαθή, Τήνος" ;
+    wdt:P5 wd:Q460 ;
+    wdt:P6 "μάρμαρο, δείγμα, Βαθή, Acosta" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC04386_edit.jpg> ;
+    schema:description "Δείγμα μαρμάρου από το λατομείο Βαθής."@el,
+        "Marble sample from the Vathy quarry."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Acosta"@el,
+        "Βαθή"@el,
+        "δείγμα"@el,
+        "μάρμαρο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q583> .
+
+wd:Q595 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Δείγμα σμύριδας στον εναέριο σιδηρόδρομο, Κακόρυακας"@el,
+        "Emery sample at Kakoriakas aerial cable railway"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Δείγμα σμύριδας στον εναέριο σιδηρόδρομο στον Κακόρυακα."@el,
+        "Emery sample found at the Kakoriakas emery aerial cable railway."@en ;
+    dcterms:identifier "ecdt_acosta_naxos_001" ;
+    dcterms:isPartOf wd:Q461 ;
+    dcterms:spatial "Κακόρυακας, Νάξος" ;
+    dcterms:title "Δείγμα σμύριδας στον εναέριο σιδηρόδρομο, Κακόρυακας"@el,
+        "Emery sample at Kakoriakas aerial cable railway"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q595> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_acosta_naxos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC05075_edit.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Κακόρυακας, Νάξος" ;
+    wdt:P5 wd:Q461 ;
+    wdt:P6 "σμύριδα, δείγμα, Κακόρυακας, εναέριος σιδηρόδρομος" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC05075_edit.jpg> ;
+    schema:description "Δείγμα σμύριδας στον εναέριο σιδηρόδρομο στον Κακόρυακα."@el,
+        "Emery sample found at the Kakoriakas emery aerial cable railway."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Κακόρυακας"@el,
+        "δείγμα"@el,
+        "εναέριος σιδηρόδρομος"@el,
+        "σμύριδα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q595> .
+
+wd:Q6 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Διενέργεια αλιείας"@el ;
+    dcterms:contributor "Πάρις Τσιριγώτης" ;
+    dcterms:created "2015"^^xsd:gYear ;
+    dcterms:creator "Δημήτρης Βεκρής" ;
+    dcterms:description "Ο Δημήτρης Βεκρής διενεργεί αλιεία."@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_001" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Νικουριά" ;
+    dcterms:title "Διενέργεια αλιείας"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q6> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Πάρις Τσιριγώτης" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_001" ;
+    wdt:P2 "Δημήτρης Βεκρής" ;
+    wdt:P3 "2015"^^xsd:gYear ;
+    wdt:P4 "Νικουριά" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "Δημήτρης Βεκρής, αλιεία" ;
+    schema:description "Ο Δημήτρης Βεκρής διενεργεί αλιεία."@el ;
+    schema:keywords "Δημήτρης Βεκρής"@el,
+        "αλιεία"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q6> .
+
+wd:Q607 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Δείγμα σιδηρομεταλλεύματος από την αποβάθρα στο Απάντημα"@el,
+        "Iron ore sample from Apandima loading dock"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Δείγμα σιδηρομεταλλεύματος από την αποβάθρα φόρτωσης στο Απάντημα."@el,
+        "Iron ore sample from the Apandima loading dock."@en ;
+    dcterms:identifier "ecdt_acosta_antiparos_001" ;
+    dcterms:isPartOf wd:Q462 ;
+    dcterms:spatial "Απάντημα, Αντίπαρος" ;
+    dcterms:title "Δείγμα σιδηρομεταλλεύματος από την αποβάθρα στο Απάντημα"@el,
+        "Iron ore sample from Apandima loading dock"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q607> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_acosta_antiparos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC06005_edit.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Απάντημα, Αντίπαρος" ;
+    wdt:P5 wd:Q462 ;
+    wdt:P6 "σιδηρομετάλλευμα, δείγμα, Απάντημα" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC06005_edit.jpg> ;
+    schema:description "Δείγμα σιδηρομεταλλεύματος από την αποβάθρα φόρτωσης στο Απάντημα."@el,
+        "Iron ore sample from the Apandima loading dock."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Απάντημα"@el,
+        "δείγμα"@el,
+        "σιδηρομετάλλευμα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q607> .
+
+wd:Q619 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Δείγμα σιδηρομεταλλεύματος στο Μισοβούνι"@el,
+        "Iron ore sample at Misovouni"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Δείγμα σιδηρομεταλλεύματος στο Μισοβούνι, κοντά στη Μονή Ευαγγελίστριας."@el,
+        "Iron ore sample at Misovouni, near Moni Evaggelistrias."@en ;
+    dcterms:identifier "ecdt_acosta_serifos_001" ;
+    dcterms:isPartOf wd:Q463 ;
+    dcterms:spatial "Μισοβούνι, Σέριφος" ;
+    dcterms:title "Δείγμα σιδηρομεταλλεύματος στο Μισοβούνι"@el,
+        "Iron ore sample at Misovouni"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q619> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_acosta_serifos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC06388_edit.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Μισοβούνι, Σέριφος" ;
+    wdt:P5 wd:Q463 ;
+    wdt:P6 "σιδηρομετάλλευμα, δείγμα, Μισοβούνι" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC06388_edit.jpg> ;
+    schema:description "Δείγμα σιδηρομεταλλεύματος στο Μισοβούνι, κοντά στη Μονή Ευαγγελίστριας."@el,
+        "Iron ore sample at Misovouni, near Moni Evaggelistrias."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Μισοβούνι"@el,
+        "δείγμα"@el,
+        "σιδηρομετάλλευμα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q619> .
+
+wd:Q631 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Δείγμα μπεντονίτη στο ορυχείο της Αγγεριάς"@el,
+        "Bentonite sample at Aggeria mine"@en ;
+    dcterms:contributor "Jacob Moe" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Δείγμα μπεντονίτη στο ορυχείο της Αγγεριάς."@el,
+        "Bentonite sample at the Aggeria mine."@en ;
+    dcterms:identifier "ecdt_acosta_milos_001" ;
+    dcterms:isPartOf wd:Q464 ;
+    dcterms:spatial "Αγγεριά, Μήλος" ;
+    dcterms:title "Δείγμα μπεντονίτη στο ορυχείο της Αγγεριάς"@el,
+        "Bentonite sample at Aggeria mine"@en ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q631> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_acosta_milos_001" ;
+    wdt:P15 <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC08605_edit.jpg> ;
+    wdt:P16 "Εικόνα" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P3 "2025"^^xsd:gYear ;
+    wdt:P4 "Αγγεριά, Μήλος" ;
+    wdt:P5 wd:Q464 ;
+    wdt:P6 "μπεντονίτης, δείγμα, Αγγεριά" ;
+    schema:contentUrl <https://archipelagonetwork.org/wp-content/uploads/2025/04/DSC08605_edit.jpg> ;
+    schema:description "Δείγμα μπεντονίτη στο ορυχείο της Αγγεριάς."@el,
+        "Bentonite sample at the Aggeria mine."@en ;
+    schema:isPartOf "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    schema:keywords "Αγγεριά"@el,
+        "δείγμα"@el,
+        "μπεντονίτης"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q631> .
+
+wdt:P1 a rdf:Property ;
+    rdfs:label "είναι στιγμιότυπο"@el,
+        "instance of"@en ;
+    owl:equivalentProperty rdf:type .
+
+wdt:P10 a rdf:Property ;
+    rdfs:label "Τεκμηριωτής"@el,
+        "documenter"@en ;
+    rdfs:subPropertyOf dcterms:contributor .
+
+wdt:P11 a rdf:Property ;
+    rdfs:label "Σημειώσεις"@el,
+        "notes"@en ;
+    rdfs:subPropertyOf skos:note .
+
+wdt:P12 a rdf:Property ;
+    rdfs:label "Έργο AN"@el,
+        "AN project"@en ;
+    rdfs:subPropertyOf schema:isPartOf .
+
+wdt:P13 a rdf:Property ;
+    rdfs:label "Ίδιο με"@el,
+        "same as"@en ;
+    rdfs:subPropertyOf owl:sameAs .
+
+wdt:P14 a rdf:Property ;
+    rdfs:label "Αναγνωριστικό"@el,
+        "identifier"@en ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+wdt:P15 a rdf:Property ;
+    rdfs:label "URL πηγής"@el,
+        "source URL"@en ;
+    rdfs:subPropertyOf schema:contentUrl .
+
+wdt:P16 a rdf:Property ;
+    rdfs:label "Ψηφιακός τύπος"@el,
+        "digital type"@en ;
+    rdfs:subPropertyOf dcterms:type .
+
+wdt:P2 a rdf:Property ;
+    rdfs:label "Δημιουργός"@el,
+        "creator"@en ;
+    rdfs:subPropertyOf dcterms:creator .
+
+wdt:P3 a rdf:Property ;
+    rdfs:label "Ημερομηνία δημιουργίας"@el,
+        "date of creation"@en ;
+    rdfs:subPropertyOf dcterms:created .
+
+wdt:P4 a rdf:Property ;
+    rdfs:label "Τόπος δημιουργίας"@el,
+        "place of creation"@en ;
+    rdfs:subPropertyOf dcterms:spatial .
+
+wdt:P5 a rdf:Property ;
+    rdfs:label "Μέρος συλλογής"@el,
+        "part of collection"@en ;
+    rdfs:subPropertyOf dcterms:isPartOf .
+
+wdt:P6 a rdf:Property ;
+    rdfs:label "Λέξεις-κλειδιά"@el,
+        "keywords"@en ;
+    rdfs:subPropertyOf schema:keywords .
+
+wdt:P7 a rdf:Property ;
+    rdfs:label "Χρώμα"@el,
+        "color"@en .
+
+wdt:P8 a rdf:Property ;
+    rdfs:label "Μέθοδος συλλογής"@el,
+        "collection method"@en .
+
+wdt:P9 a rdf:Property ;
+    rdfs:label "Ημερομηνία καταχώρησης"@el,
+        "registration date"@en ;
+    rdfs:subPropertyOf dcterms:dateSubmitted .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.jsonld> a dcat:Distribution ;
+    dcterms:format "JSON-LD" ;
+    dcterms:title "JSON-LD: archipelago_full.jsonld"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.jsonld> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.nt> a dcat:Distribution ;
+    dcterms:format "N-Triples" ;
+    dcterms:title "N-Triples: archipelago_full.nt"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.nt> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.ttl> a dcat:Distribution ;
+    dcterms:format "Turtle" ;
+    dcterms:title "Turtle: archipelago_full.ttl"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_sample.ttl> a dcat:Distribution ;
+    dcterms:format "Turtle (sample)" ;
+    dcterms:title "Turtle (sample): archipelago_sample.ttl"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_sample.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#sparql> a dcat:DataService ;
+    dcterms:title "Archipelago SPARQL endpoint"@en ;
+    dcat:endpointURL <https://archipelago-wikibase.wikibase.cloud/query/sparql> ;
+    dcat:servesDataset <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> .
+
+wd:Q3 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Επαγγελματικός Αλιευτικός Σύλλογος Αμοργού"@el ;
+    dcterms:creator "Επαγγελματικός Αλιευτικός Σύλλογος Αμοργού" ;
+    dcterms:identifier "cmt_amorgos_archival_collection_hozoviotissa" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Επαγγελματικός Αλιευτικός Σύλλογος Αμοργού"@el ;
+    void:entities 103 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q3> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P14 "cmt_amorgos_archival_collection_hozoviotissa" ;
+    wdt:P2 "Επαγγελματικός Αλιευτικός Σύλλογος Αμοργού" .
+
+wd:Q4 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Ιωάννης Η. Βεκρής"@el ;
+    dcterms:creator "Ιωάννης Η. Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_collection_ioannis i vekris" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Ιωάννης Η. Βεκρής"@el ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q4> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P14 "cmt_amorgos_archival_collection_ioannis i vekris" ;
+    wdt:P2 "Ιωάννης Η. Βεκρής" .
+
+wd:Q438 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο επιχείρησης Καραγεώργη (Τήνος)"@el,
+        "Karageorgis Company archive (Tinos)"@en ;
+    dcterms:creator "Αρχείο επιχείρησης Καραγεώργη, μέσω Αλέκου Φλωράκη" ;
+    dcterms:description "Ιστορικές φωτογραφίες και έγγραφα της επιχείρησης μαρμαρεξόρυξης Καραγεώργη στη Βαθή Τήνου, με αναφορά στην κοπή και μεταφορά μαρμάρου και στο άτυπο εργαστήριο των αρχών-μέσων του 20ού αιώνα. Παραχωρήθηκαν στο έργο μέσω του ερευνητή Αλέκου Φλωράκη."@el,
+        "Historical photographs and documents from the Karageorgis marble-quarrying company at Vathy, Tinos, covering marble cutting, transport and the informal workshop of the early-to-mid 20th century. Shared with the project via researcher Alekos Florakis."@en ;
+    dcterms:identifier "ecdt_collection_tinos_karageorgis" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο επιχείρησης Καραγεώργη (Τήνος)"@el,
+        "Karageorgis Company archive (Tinos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q438> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_tinos_karageorgis" ;
+    wdt:P2 "Αρχείο επιχείρησης Καραγεώργη, μέσω Αλέκου Φλωράκη" ;
+    wdt:P6 "μάρμαρο, λατομείο, Βαθή, Τήνος, επιχείρηση Καραγεώργη" ;
+    schema:description "Ιστορικές φωτογραφίες και έγγραφα της επιχείρησης μαρμαρεξόρυξης Καραγεώργη στη Βαθή Τήνου, με αναφορά στην κοπή και μεταφορά μαρμάρου και στο άτυπο εργαστήριο των αρχών-μέσων του 20ού αιώνα. Παραχωρήθηκαν στο έργο μέσω του ερευνητή Αλέκου Φλωράκη."@el,
+        "Historical photographs and documents from the Karageorgis marble-quarrying company at Vathy, Tinos, covering marble cutting, transport and the informal workshop of the early-to-mid 20th century. Shared with the project via researcher Alekos Florakis."@en .
+
+wd:Q439 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο Ξενοφοντίδη (Τήνος)"@el,
+        "Xenofontidis archive (Tinos)"@en ;
+    dcterms:creator "Αρχείο Ξενοφοντίδη, μέσω Αλέκου Φλωράκη" ;
+    dcterms:description "Φωτογραφίες και έγγραφα σχετικά με το λατομείο πράσινου μαρμάρου των Αχινών στην Τήνο, με αναφορά στην εξόρυξη, τη μέτρηση και τη θαλάσσια μεταφορά μαρμάρινων όγκων, που παραχωρήθηκαν στο έργο μέσω του ερευνητή Αλέκου Φλωράκη."@el,
+        "Photographs and documents relating to the Achinous green-marble quarry on Tinos, including quarrying, measuring and transport of marble blocks by sea, shared with the project via researcher Alekos Florakis."@en ;
+    dcterms:identifier "ecdt_collection_tinos_xenofontidis" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο Ξενοφοντίδη (Τήνος)"@el,
+        "Xenofontidis archive (Tinos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q439> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_tinos_xenofontidis" ;
+    wdt:P2 "Αρχείο Ξενοφοντίδη, μέσω Αλέκου Φλωράκη" ;
+    wdt:P6 "μάρμαρο, λατομείο, Αχινοί, Τήνος, Ξενοφοντίδης" ;
+    schema:description "Φωτογραφίες και έγγραφα σχετικά με το λατομείο πράσινου μαρμάρου των Αχινών στην Τήνο, με αναφορά στην εξόρυξη, τη μέτρηση και τη θαλάσσια μεταφορά μαρμάρινων όγκων, που παραχωρήθηκαν στο έργο μέσω του ερευνητή Αλέκου Φλωράκη."@el,
+        "Photographs and documents relating to the Achinous green-marble quarry on Tinos, including quarrying, measuring and transport of marble blocks by sea, shared with the project via researcher Alekos Florakis."@en .
+
+wd:Q440 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Τεκμηρίωση λατομείων Αλέκου Φλωράκη (Τήνος)"@el,
+        "Alekos Florakis quarry documentation (Tinos)"@en ;
+    dcterms:creator "Αλέκος Φλωράκης" ;
+    dcterms:description "Φωτογραφίες που τράβηξε το 1984 ο εθνολόγος και λαογράφος Αλέκος Φλωράκης, τεκμηριώνοντας τα λατομεία μαρμάρου στους Αχινούς, τα Χούσλα, τη Ντρούμπα, τον Παπαπέτρου και τη Βαθή στην Τήνο."@el,
+        "Photographs taken in 1984 by ethnologist and folklorist Alekos Florakis, documenting the Achinous, Housla, Ntrouba, Papapetrou and Vathy marble quarries on Tinos."@en ;
+    dcterms:identifier "ecdt_collection_tinos_florakis" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Τεκμηρίωση λατομείων Αλέκου Φλωράκη (Τήνος)"@el,
+        "Alekos Florakis quarry documentation (Tinos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q440> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_tinos_florakis" ;
+    wdt:P2 "Αλέκος Φλωράκης" ;
+    wdt:P6 "μάρμαρο, λατομείο, Τήνος, Αχινοί, Βαθή, Φλωράκης" ;
+    schema:description "Φωτογραφίες που τράβηξε το 1984 ο εθνολόγος και λαογράφος Αλέκος Φλωράκης, τεκμηριώνοντας τα λατομεία μαρμάρου στους Αχινούς, τα Χούσλα, τη Ντρούμπα, τον Παπαπέτρου και τη Βαθή στην Τήνο."@el,
+        "Photographs taken in 1984 by ethnologist and folklorist Alekos Florakis, documenting the Achinous, Housla, Ntrouba, Papapetrou and Vathy marble quarries on Tinos."@en .
+
+wd:Q441 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Οπτικοακουστικό αρχείο Γιώργου Αλεξόπουλου (Τήνος)"@el,
+        "Yorgos Alexopoulos audiovisual archive (Tinos)"@en ;
+    dcterms:creator "Γιώργος Αλεξόπουλος" ;
+    dcterms:description "Αποσπάσματα από το προσωπικό βιντεοαρχείο του μαρμαροτεχνίτη και κινηματογραφιστή Γιώργου Αλεξόπουλου, που καταγράφει τη λατομική υποδομή και την τοπική ζωή της Τήνου από το 1980."@el,
+        "Excerpts from the personal video archive of marble technician and filmmaker Yorgos Alexopoulos, documenting quarrying infrastructure and local life on Tinos since 1980."@en ;
+    dcterms:identifier "ecdt_collection_tinos_alexopoulos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Οπτικοακουστικό αρχείο Γιώργου Αλεξόπουλου (Τήνος)"@el,
+        "Yorgos Alexopoulos audiovisual archive (Tinos)"@en ;
+    void:entities 2 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q441> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_tinos_alexopoulos" ;
+    wdt:P2 "Γιώργος Αλεξόπουλος" ;
+    wdt:P6 "μάρμαρο, λατομείο, Τήνος, βίντεο, Αλεξόπουλος" ;
+    schema:description "Αποσπάσματα από το προσωπικό βιντεοαρχείο του μαρμαροτεχνίτη και κινηματογραφιστή Γιώργου Αλεξόπουλου, που καταγράφει τη λατομική υποδομή και την τοπική ζωή της Τήνου από το 1980."@el,
+        "Excerpts from the personal video archive of marble technician and filmmaker Yorgos Alexopoulos, documenting quarrying infrastructure and local life on Tinos since 1980."@en .
+
+wd:Q442 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Υλικό από «Τα μεταλλεία της Αντιπάρου 19ος-20ός αιώνας» (Αντίπαρος)"@el,
+        "\"Mines of Antiparos 19th-20th Century\" materials (Antiparos)"@en ;
+    dcterms:creator "Άγγελος Σινάνης" ;
+    dcterms:description "Αρχειακές εικόνες, διαγράμματα και σύγχρονες φωτογραφίες που συγκέντρωσε ο ερευνητής και συγγραφέας Άγγελος Σινάνης για το βιβλίο του (2019) σχετικά με τα μεταλλεία σιδήρου, μαγγανίου, μολύβδου και ψευδαργύρου της Αντιπάρου."@el,
+        "Archival images, diagrams and contemporary photographs compiled by researcher and writer Aggelos Sinanis for his 2019 book on the iron, manganese, lead and zinc mines of Antiparos."@en ;
+    dcterms:identifier "ecdt_collection_antiparos_sinanis" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Υλικό από «Τα μεταλλεία της Αντιπάρου 19ος-20ός αιώνας» (Αντίπαρος)"@el,
+        "\"Mines of Antiparos 19th-20th Century\" materials (Antiparos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q442> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_antiparos_sinanis" ;
+    wdt:P2 "Άγγελος Σινάνης" ;
+    wdt:P6 "σιδηρομετάλλευμα, μεταλλείο, Αντίπαρος, Σινάνης" ;
+    schema:description "Αρχειακές εικόνες, διαγράμματα και σύγχρονες φωτογραφίες που συγκέντρωσε ο ερευνητής και συγγραφέας Άγγελος Σινάνης για το βιβλίο του (2019) σχετικά με τα μεταλλεία σιδήρου, μαγγανίου, μολύβδου και ψευδαργύρου της Αντιπάρου."@el,
+        "Archival images, diagrams and contemporary photographs compiled by researcher and writer Aggelos Sinanis for his 2019 book on the iron, manganese, lead and zinc mines of Antiparos."@en .
+
+wd:Q444 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο Μεταλλευτικού Μουσείου Μήλου"@el,
+        "Milos Mining Museum archive"@en ;
+    dcterms:creator "Μεταλλευτικό Μουσείο Μήλου" ;
+    dcterms:description "Προφορικές μαρτυρίες και φωτογραφίες που φυλάσσει το Μεταλλευτικό Μουσείο Μήλου (Αδάμαντας, ίδρ. 1998), σχετικά με την εξόρυξη και επεξεργασία θείου, βαρύτη και μαγγανίου στη Μήλο, οι οποίες ψηφιοποιήθηκαν σε συνεργασία με το Δίκτυο Αρχιπέλαγος."@el,
+        "Oral history interviews and photographs held by the Milos Mining Museum (Adamantas, est. 1998), documenting sulphur, baryte and manganese mining and processing on Milos, digitized in collaboration with Archipelago Network."@en ;
+    dcterms:identifier "ecdt_collection_milos_mining_museum" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο Μεταλλευτικού Μουσείου Μήλου"@el,
+        "Milos Mining Museum archive"@en ;
+    void:entities 11 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q444> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_milos_mining_museum" ;
+    wdt:P2 "Μεταλλευτικό Μουσείο Μήλου" ;
+    wdt:P6 "εξόρυξη, θείο, βαρύτης, μαγγάνιο, Μήλος, μεταλλευτικό μουσείο" ;
+    schema:description "Προφορικές μαρτυρίες και φωτογραφίες που φυλάσσει το Μεταλλευτικό Μουσείο Μήλου (Αδάμαντας, ίδρ. 1998), σχετικά με την εξόρυξη και επεξεργασία θείου, βαρύτη και μαγγανίου στη Μήλο, οι οποίες ψηφιοποιήθηκαν σε συνεργασία με το Δίκτυο Αρχιπέλαγος."@el,
+        "Oral history interviews and photographs held by the Milos Mining Museum (Adamantas, est. 1998), documenting sulphur, baryte and manganese mining and processing on Milos, digitized in collaboration with Archipelago Network."@en .
+
+wd:Q445 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο επιχείρησης S&B (Μήλος)"@el,
+        "S&B Company archive (Milos)"@en ;
+    dcterms:creator "Αρχείο επιχείρησης S&B, στο Μεταλλευτικό Μουσείο Μήλου" ;
+    dcterms:description "Φωτογραφίες από το αρχείο της μεταλλευτικής εταιρείας S&B, που φυλάσσονται στο Μεταλλευτικό Μουσείο Μήλου, με αναφορά στην υπαίθρια εξόρυξη, τη μεταφορά με πορθμείο και τις εγκαταστάσεις επεξεργασίας στη Μήλο από τη δεκαετία του 1950 έως το 1980."@el,
+        "Photographs from the archive of mining company S&B held at the Milos Mining Museum, covering open-pit mining, ferry transport and processing plants on Milos from the 1950s to 1980s."@en ;
+    dcterms:identifier "ecdt_collection_milos_sb" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο επιχείρησης S&B (Μήλος)"@el,
+        "S&B Company archive (Milos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q445> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_milos_sb" ;
+    wdt:P2 "Αρχείο επιχείρησης S&B, στο Μεταλλευτικό Μουσείο Μήλου" ;
+    wdt:P6 "εξόρυξη, υπαίθριο ορυχείο, Βούδια, Μήλος, S&B" ;
+    schema:description "Φωτογραφίες από το αρχείο της μεταλλευτικής εταιρείας S&B, που φυλάσσονται στο Μεταλλευτικό Μουσείο Μήλου, με αναφορά στην υπαίθρια εξόρυξη, τη μεταφορά με πορθμείο και τις εγκαταστάσεις επεξεργασίας στη Μήλο από τη δεκαετία του 1950 έως το 1980."@el,
+        "Photographs from the archive of mining company S&B held at the Milos Mining Museum, covering open-pit mining, ferry transport and processing plants on Milos from the 1950s to 1980s."@en .
+
+wd:Q456 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο Μανώλη Δ. Μανωλά (Νάξος)"@el,
+        "Manolis D. Manolas archive (Naxos)"@en ;
+    dcterms:creator "Μανώλης Δ. Μανωλάς" ;
+    dcterms:description "Φωτογραφίες, ηχητικά ντοκουμέντα και βίντεο από το προσωπικό αρχείο του ερευνητή και χρονικογράφου Μανώλη Δ. Μανωλά (1947-2021), που τεκμηριώνουν τη σμυριδωρυχεία, τη μεταφορά σμύριδας και την κοινοτική ζωή στην Κόρωνο Νάξου, από τις αρχές του 20ού αιώνα έως τη δεκαετία του 1990."@el,
+        "Photographs, sound recordings and video from the personal archive of researcher and local chronicler Manolis D. Manolas (1947-2021), documenting emery mining, transport and community life in Koronos, Naxos, from the early 1900s to the 1990s."@en ;
+    dcterms:identifier "ecdt_collection_naxos_manolas" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο Μανώλη Δ. Μανωλά (Νάξος)"@el,
+        "Manolis D. Manolas archive (Naxos)"@en ;
+    void:entities 13 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q456> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_naxos_manolas" ;
+    wdt:P2 "Μανώλης Δ. Μανωλάς" ;
+    wdt:P6 "σμύριδα, ορυχείο, Κόρωνος, Νάξος, Μανωλάς" ;
+    schema:description "Φωτογραφίες, ηχητικά ντοκουμέντα και βίντεο από το προσωπικό αρχείο του ερευνητή και χρονικογράφου Μανώλη Δ. Μανωλά (1947-2021), που τεκμηριώνουν τη σμυριδωρυχεία, τη μεταφορά σμύριδας και την κοινοτική ζωή στην Κόρωνο Νάξου, από τις αρχές του 20ού αιώνα έως τη δεκαετία του 1990."@el,
+        "Photographs, sound recordings and video from the personal archive of researcher and local chronicler Manolis D. Manolas (1947-2021), documenting emery mining, transport and community life in Koronos, Naxos, from the early 1900s to the 1990s."@en .
+
+wd:Q457 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Αρχείο Εργατικού Κέντρου Μήλου"@el,
+        "Milos Labor Center archive"@en ;
+    dcterms:creator "Εργατικό Κέντρο Μήλου" ;
+    dcterms:description "Φωτογραφικό αρχείο του Εργατικού Κέντρου Μήλου (ίδρ. δεκαετία 1960), που τεκμηριώνει συνελεύσεις εργαζομένων, πομπές και διαμαρτυρίες για ασφαλέστερες συνθήκες εργασίας στα ορυχεία, σε βάθος τεσσάρων δεκαετιών."@el,
+        "Photographic archive of the Milos Labor Center (est. 1960s), documenting workers' assemblies, processions and protests for safer mining conditions over four decades."@en ;
+    dcterms:identifier "ecdt_collection_milos_labor_center" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Αρχείο Εργατικού Κέντρου Μήλου"@el,
+        "Milos Labor Center archive"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q457> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_milos_labor_center" ;
+    wdt:P2 "Εργατικό Κέντρο Μήλου" ;
+    wdt:P6 "εργατικό κίνημα, διαμαρτυρία, Μήλος, εργάτες, εργατικό κέντρο" ;
+    schema:description "Φωτογραφικό αρχείο του Εργατικού Κέντρου Μήλου (ίδρ. δεκαετία 1960), που τεκμηριώνει συνελεύσεις εργαζομένων, πομπές και διαμαρτυρίες για ασφαλέστερες συνθήκες εργασίας στα ορυχεία, σε βάθος τεσσάρων δεκαετιών."@el,
+        "Photographic archive of the Milos Labor Center (est. 1960s), documenting workers' assemblies, processions and protests for safer mining conditions over four decades."@en .
+
+wd:Q458 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Συλλογή Στέφανου Εξαδάκτυλου (Σέριφος)"@el,
+        "Stefanos Exadactylos collection (Serifos)"@en ;
+    dcterms:creator "Στέφανος Εξαδάκτυλος, μέσω Γενικών Αρχείων του Κράτους - ΓΑΚ Σύρου" ;
+    dcterms:description "Διαγράμματα και φωτογραφίες του μεταλλειολόγου Στέφανου Εξαδάκτυλου, ο οποίος εργάστηκε στα ορυχεία σιδήρου του Μεγάλου Λιβαδιού στη Σέριφο τη δεκαετία του 1950, σε συνεργασία με τα Γενικά Αρχεία του Κράτους - Τμήμα ΓΑΚ Σύρου."@el,
+        "Diagrams and photographs from mining engineer Stefanos Exadactylos, who worked at the Mega Livadi iron mines on Serifos in the 1950s, presented in partnership with the Historical Archive of Syros - GAK."@en ;
+    dcterms:identifier "ecdt_collection_serifos_exadactylos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Συλλογή Στέφανου Εξαδάκτυλου (Σέριφος)"@el,
+        "Stefanos Exadactylos collection (Serifos)"@en ;
+    void:entities 9 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q458> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_serifos_exadactylos" ;
+    wdt:P2 "Στέφανος Εξαδάκτυλος, μέσω Γενικών Αρχείων του Κράτους - ΓΑΚ Σύρου" ;
+    wdt:P6 "σιδηρομετάλλευμα, ορυχείο, Μέγα Λιβάδι, Σέριφος, Εξαδάκτυλος" ;
+    schema:description "Διαγράμματα και φωτογραφίες του μεταλλειολόγου Στέφανου Εξαδάκτυλου, ο οποίος εργάστηκε στα ορυχεία σιδήρου του Μεγάλου Λιβαδιού στη Σέριφο τη δεκαετία του 1950, σε συνεργασία με τα Γενικά Αρχεία του Κράτους - Τμήμα ΓΑΚ Σύρου."@el,
+        "Diagrams and photographs from mining engineer Stefanos Exadactylos, who worked at the Mega Livadi iron mines on Serifos in the 1950s, presented in partnership with the Historical Archive of Syros - GAK."@en .
+
+wd:Q460 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: Ignacio Acosta - «Τήνος: Μαρμάρινη μνημειακότητα»"@el,
+        "Commission: Ignacio Acosta - \"Tinos: Marble Monumentality\""@en ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Το κεφάλαιο της Τήνου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει ενεργά και ιστορικά λατομεία μαρμάρου και χώρους μαρμαροτεχνίας στην Τήνο."@el,
+        "The Tinos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting active and historic marble quarries and craft sites on Tinos."@en ;
+    dcterms:identifier "ecdt_collection_acosta_tinos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: Ignacio Acosta - «Τήνος: Μαρμάρινη μνημειακότητα»"@el,
+        "Commission: Ignacio Acosta - \"Tinos: Marble Monumentality\""@en ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q460> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_acosta_tinos" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P6 "ανάθεση, Τήνος, μάρμαρο, Ignacio Acosta, φωτογραφία" ;
+    schema:description "Το κεφάλαιο της Τήνου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει ενεργά και ιστορικά λατομεία μαρμάρου και χώρους μαρμαροτεχνίας στην Τήνο."@el,
+        "The Tinos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting active and historic marble quarries and craft sites on Tinos."@en .
+
+wd:Q461 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: Ignacio Acosta - «Νάξος: Σμυριδένιοι αστερισμοί»"@el,
+        "Commission: Ignacio Acosta - \"Naxos: Emery Constellations\""@en ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Το κεφάλαιο της Νάξου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει τη σμυριδωρυκτική υποδομή και μουσειακές συλλογές της Νάξου."@el,
+        "The Naxos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting emery mining infrastructure and museum collections on Naxos."@en ;
+    dcterms:identifier "ecdt_collection_acosta_naxos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: Ignacio Acosta - «Νάξος: Σμυριδένιοι αστερισμοί»"@el,
+        "Commission: Ignacio Acosta - \"Naxos: Emery Constellations\""@en ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q461> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_acosta_naxos" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P6 "ανάθεση, Νάξος, σμύριδα, Ignacio Acosta, φωτογραφία" ;
+    schema:description "Το κεφάλαιο της Νάξου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει τη σμυριδωρυκτική υποδομή και μουσειακές συλλογές της Νάξου."@el,
+        "The Naxos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting emery mining infrastructure and museum collections on Naxos."@en .
+
+wd:Q462 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: Ignacio Acosta - «Αντίπαρος: Χαράγματα σιδήρου»"@el,
+        "Commission: Ignacio Acosta - \"Antiparos: Etchings of Iron\""@en ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Το κεφάλαιο της Αντιπάρου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει την εγκαταλελειμμένη υποδομή εξόρυξης σιδήρου στην Αντίπαρο."@el,
+        "The Antiparos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting derelict iron-mining infrastructure on Antiparos."@en ;
+    dcterms:identifier "ecdt_collection_acosta_antiparos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: Ignacio Acosta - «Αντίπαρος: Χαράγματα σιδήρου»"@el,
+        "Commission: Ignacio Acosta - \"Antiparos: Etchings of Iron\""@en ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q462> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_acosta_antiparos" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P6 "ανάθεση, Αντίπαρος, σιδηρομετάλλευμα, Ignacio Acosta, φωτογραφία" ;
+    schema:description "Το κεφάλαιο της Αντιπάρου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει την εγκαταλελειμμένη υποδομή εξόρυξης σιδήρου στην Αντίπαρο."@el,
+        "The Antiparos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting derelict iron-mining infrastructure on Antiparos."@en .
+
+wd:Q463 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: Ignacio Acosta - «Σέριφος: Σιδηρές επιτελέσεις»"@el,
+        "Commission: Ignacio Acosta - \"Serifos: Iron Enactments\""@en ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Το κεφάλαιο της Σερίφου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει μεταλλευτικές θέσεις, σωματεία και συλλογική μνήμη στη Σέριφο."@el,
+        "The Serifos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting mining sites, unions and community memory on Serifos."@en ;
+    dcterms:identifier "ecdt_collection_acosta_serifos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: Ignacio Acosta - «Σέριφος: Σιδηρές επιτελέσεις»"@el,
+        "Commission: Ignacio Acosta - \"Serifos: Iron Enactments\""@en ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q463> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_acosta_serifos" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P6 "ανάθεση, Σέριφος, σιδηρομετάλλευμα, Ignacio Acosta, φωτογραφία" ;
+    schema:description "Το κεφάλαιο της Σερίφου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει μεταλλευτικές θέσεις, σωματεία και συλλογική μνήμη στη Σέριφο."@el,
+        "The Serifos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting mining sites, unions and community memory on Serifos."@en .
+
+wd:Q464 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: Ignacio Acosta - «Μήλος: Κλίμακες εξόρυξης»"@el,
+        "Commission: Ignacio Acosta - \"Milos: Scales of Extraction\""@en ;
+    dcterms:creator "Ignacio Acosta" ;
+    dcterms:description "Το κεφάλαιο της Μήλου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει τη σύγχρονη εξόρυξη μπεντονίτη και θείου παράλληλα με την εργατική ιστορία της Μήλου."@el,
+        "The Milos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting present-day bentonite and sulphur extraction alongside labor history on Milos."@en ;
+    dcterms:identifier "ecdt_collection_acosta_milos" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: Ignacio Acosta - «Μήλος: Κλίμακες εξόρυξης»"@el,
+        "Commission: Ignacio Acosta - \"Milos: Scales of Extraction\""@en ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q464> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_acosta_milos" ;
+    wdt:P2 "Ignacio Acosta" ;
+    wdt:P6 "ανάθεση, Μήλος, μπεντονίτης, Ignacio Acosta, φωτογραφία" ;
+    schema:description "Το κεφάλαιο της Μήλου από την ανατεθειμένη φωτογραφική σειρά του Ignacio Acosta «Κυκλάδες: Μνήμη λίθων», που τεκμηριώνει τη σύγχρονη εξόρυξη μπεντονίτη και θείου παράλληλα με την εργατική ιστορία της Μήλου."@el,
+        "The Milos chapter of Ignacio Acosta's commissioned photo series \"Cyclades: Memories of Rock\", documenting present-day bentonite and sulphur extraction alongside labor history on Milos."@en .
+
+wd:Q465 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Νέα παραγωγή: «Λιθοβολούσες» της Σοφίας Ντώνα (Σέριφος)"@el,
+        "Commission: \"Stonethrowers\" by Sofia Dona (Serifos)"@en ;
+    dcterms:creator "Σοφία Ντώνα" ;
+    dcterms:description "Ανατεθειμένο πολυμεσικό δοκιμιακό φιλμ και συνοδευτικές τρισδιάστατες σαρώσεις της εικαστικού Σοφίας Ντώνα, που δημιουργήθηκαν κατά τη διαμονή της στη Σέριφο το 2025, αναδεικνύοντας τον ρόλο των γυναικών στην απεργία των μεταλλωρύχων του Μεγάλου Λιβαδιού το 1916."@el,
+        "A commissioned multimedia essay film and accompanying 3D scans by visual artist Sofia Dona, made during a 2025 residency on Serifos, uncovering women's role in the 1916 Mega Livadi miners' strike."@en ;
+    dcterms:identifier "ecdt_collection_serifos_dona" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Νέα παραγωγή: «Λιθοβολούσες» της Σοφίας Ντώνα (Σέριφος)"@el,
+        "Commission: \"Stonethrowers\" by Sofia Dona (Serifos)"@en ;
+    void:entities 7 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q465> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P10 "Jacob Moe" ;
+    wdt:P12 "Εξόρυξη στις Κυκλάδες: Ψηφιακά Ίχνη" ;
+    wdt:P14 "ecdt_collection_serifos_dona" ;
+    wdt:P2 "Σοφία Ντώνα" ;
+    wdt:P6 "ανάθεση, Σέριφος, Μέγα Λιβάδι, Σοφία Ντώνα, απεργία 1916" ;
+    schema:description "Ανατεθειμένο πολυμεσικό δοκιμιακό φιλμ και συνοδευτικές τρισδιάστατες σαρώσεις της εικαστικού Σοφίας Ντώνα, που δημιουργήθηκαν κατά τη διαμονή της στη Σέριφο το 2025, αναδεικνύοντας τον ρόλο των γυναικών στην απεργία των μεταλλωρύχων του Μεγάλου Λιβαδιού το 1916."@el,
+        "A commissioned multimedia essay film and accompanying 3D scans by visual artist Sofia Dona, made during a 2025 residency on Serifos, uncovering women's role in the 1916 Mega Livadi miners' strike."@en .
+
+wd:Q5 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Γιάννης Σκοπελίτης"@el ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:identifier "cmt_amorgos_archival_collection_skopelitis" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Γιάννης Σκοπελίτης"@el ;
+    void:entities 35 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q5> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P14 "cmt_amorgos_archival_collection_skopelitis" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" .
+
+<https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> a void:Dataset,
+        dcat:Dataset ;
+    dcterms:description "Μεταδεδομένα ψηφιακών αντικειμένων πολιτιστικής κληρονομιάς (αλιεία Αμοργού· Εξόρυξη στις Κυκλάδες) από το Wikibase του Archipelago Network, σε μορφή RDF."@el,
+        "Metadata of digital cultural-heritage objects (Amorgos fishing heritage; Mining in the Cyclades) from the Archipelago Network Wikibase, published as RDF."@en ;
+    dcterms:issued "2026-10-14"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:publisher "Archipelago Network" ;
+    dcterms:title "Βάση Γνώσης Archipelago — Ψηφιακές Κυκλάδες"@el,
+        "Archipelago Knowledge Base — Digital Cyclades"@en ;
+    void:entities 38 ;
+    void:sparqlEndpoint <https://archipelago-wikibase.wikibase.cloud/query/sparql> ;
+    void:uriSpace "https://archipelago-wikibase.wikibase.cloud/entity/" ;
+    void:vocabulary dcterms:,
+        skos:,
+        dcat:,
+        prov:,
+        schema: ;
+    dcat:accessService <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#sparql> ;
+    dcat:distribution <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.jsonld>,
+        <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.nt>,
+        <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_full.ttl>,
+        <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago#archipelago_sample.ttl> ;
+    dcat:landingPage <https://archipelago-wikibase.wikibase.cloud/wiki/Main_Page> .
+

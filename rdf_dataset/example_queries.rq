@@ -1,0 +1,18 @@
+# Same queries run on the live endpoint
+# https://archipelago-wikibase.wikibase.cloud/query/sparql  AND on the offline dump (rdflib / Fuseki / GraphDB)
+PREFIX wd:   <https://archipelago-wikibase.wikibase.cloud/entity/>
+PREFIX wdt:  <https://archipelago-wikibase.wikibase.cloud/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# 1. One sample item per collection, with English label
+SELECT ?collection ?collectionLabel ?item ?label WHERE {
+  ?item wdt:P1 wd:Q1 ; wdt:P5 ?collection ; rdfs:label ?label .
+  ?collection rdfs:label ?collectionLabel .
+  FILTER(lang(?label) = "el" && lang(?collectionLabel) = "el")
+} ORDER BY ?collection
+
+# 2. Items per digital type (image / video / audio / 3D)
+# SELECT ?type (COUNT(?i) AS ?n) WHERE { ?i wdt:P16 ?type } GROUP BY ?type
+
+# 3. Items with a source URL for download / thumbnail
+# SELECT ?i ?url WHERE { ?i wdt:P15 ?url } LIMIT 20
