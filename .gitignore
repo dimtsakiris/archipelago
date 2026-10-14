@@ -1,3 +1,5 @@
-archipelago-api/__pycache__/main.cpython-314.pyc
-scripts/__pycache__/build_import.cpython-314.pyc
-archipelago-api/__pycache__/sparql_client.cpython-314.pyc
+__pycache__/
+*.pyc
+.venv/
+.env
+repox_update/
