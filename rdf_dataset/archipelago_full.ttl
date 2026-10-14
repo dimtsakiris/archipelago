@@ -2239,6 +2239,442 @@ wd:Q38 a schema:CreativeWork,
         "Χώρα"@el ;
     schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q38> .
 
+wd:Q397 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Μιχάλης Βεκρής"@el ;
+    dcterms:created "2000"^^xsd:gYear ;
+    dcterms:creator "Ιωάννης Βεκρής" ;
+    dcterms:description "Ο Μιχάλης Βεκρής μπαλώνει δίχτυα στην Αιγιάλη"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_029" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Μιχάλης Βεκρής"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q397> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  2000"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ.  2000" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_029" ;
+    wdt:P2 "Ιωάννης Βεκρής" ;
+    wdt:P3 "2000"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    schema:description "Ο Μιχάλης Βεκρής μπαλώνει δίχτυα στην Αιγιάλη"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q397> .
+
+wd:Q398 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Δημήτρης Γαβαλάς και ο Μιχάλης Κρόσμαν"@el ;
+    dcterms:created "1990"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Κρόσμαν" ;
+    dcterms:description "Ο Δημήτρης Γαβαλάς και ο Μιχάλης Κρόσμαν στην Αγία Άννα"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_030" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Δημήτρης Γαβαλάς και ο Μιχάλης Κρόσμαν"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q398> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1990"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 1990" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_030" ;
+    wdt:P2 "Μιχάλης Κρόσμαν" ;
+    wdt:P3 "1990"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    schema:description "Ο Δημήτρης Γαβαλάς και ο Μιχάλης Κρόσμαν στην Αγία Άννα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q398> .
+
+wd:Q399 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Κώστας Σιγάλας πιάνοντας ψάρια"@el ;
+    dcterms:contributor "Αλέξη Αρετή" ;
+    dcterms:created "1995"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Κρόσμαν" ;
+    dcterms:description "Ο Κώστας Σιγάλας πιάνοντας ψάρια στο καΐκι \"Αγιος Γεωργιος\""@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_031" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Κώστας Σιγάλας πιάνοντας ψάρια"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q399> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1995"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Αλέξη Αρετή" ;
+    wdt:P11 "γ. 1995" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_031" ;
+    wdt:P2 "Μιχάλης Κρόσμαν" ;
+    wdt:P3 "1995"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "Κώστας Σιγάλας, ψαράς, καΐκι" ;
+    schema:description "Ο Κώστας Σιγάλας πιάνοντας ψάρια στο καΐκι \"Αγιος Γεωργιος\""@el ;
+    schema:keywords "Κώστας Σιγάλας"@el,
+        "καΐκι"@el,
+        "ψαράς"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q399> .
+
+wd:Q407 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι \"Τίμιος Σταυρός\" με το πλήρωμά του"@el ;
+    dcterms:contributor "Γιώργος Παπαδανέλλης" ;
+    dcterms:created "1985"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:description "Ο Νικήτας Βεκρής και το πλήρωμα στο καΐκι Τίμιος Σταυρός στο λιμάνι της Αιγιάλης"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_061" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Το καΐκι \"Τίμιος Σταυρός\" με το πλήρωμά του"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q407> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1985"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Γιώργος Παπαδανέλλης" ;
+    wdt:P11 "γ.  1985" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_061" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1985"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καΐκι, Αιγιάλη" ;
+    schema:description "Ο Νικήτας Βεκρής και το πλήρωμα στο καΐκι Τίμιος Σταυρός στο λιμάνι της Αιγιάλης"@el ;
+    schema:keywords "Αιγιάλη"@el,
+        "καΐκι"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q407> .
+
+wd:Q408 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Νικήτας Βεκρής"@el ;
+    dcterms:contributor "Γιώργος Παπαδανέλλης" ;
+    dcterms:created "1960"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:description "Πορτραίτο του Νικήτα Βεκρή"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_067" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Νικήτας Βεκρής"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q408> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1960"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Γιώργος Παπαδανέλλης" ;
+    wdt:P11 "γ.  1960" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_067" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1960"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "ψαράς, Αιγιάλη" ;
+    schema:description "Πορτραίτο του Νικήτα Βεκρή"@el ;
+    schema:keywords "Αιγιάλη"@el,
+        "ψαράς"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q408> .
+
+wd:Q409 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι \"Ταξιάρχης\""@el ;
+    dcterms:contributor "Γιώργος Παπαδανέλλης" ;
+    dcterms:created "2000"^^xsd:gYear ;
+    dcterms:creator "Νικόλαος Βεκρής" ;
+    dcterms:description "Ο Νικόλαος Βεκρής με την παραδοσιακή βάρκα \"Ταξιάρχης\""@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_069" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Το καΐκι \"Ταξιάρχης\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q409> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 2000"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Γιώργος Παπαδανέλλης" ;
+    wdt:P11 "γ. 2000" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_069" ;
+    wdt:P2 "Νικόλαος Βεκρής" ;
+    wdt:P3 "2000"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "ψαράς, καΐκι, Κατάπολα" ;
+    schema:description "Ο Νικόλαος Βεκρής με την παραδοσιακή βάρκα \"Ταξιάρχης\""@el ;
+    schema:keywords "Κατάπολα"@el,
+        "καΐκι"@el,
+        "ψαράς"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q409> .
+
+wd:Q410 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Παντελής Βεκρής του Αντωνόυ, Κατάπολα"@el ;
+    dcterms:created "1995"^^xsd:gYear ;
+    dcterms:creator "Νικόλαος Βεκρής" ;
+    dcterms:description "Παντελής Βεκρής του Αντωνίου, Κατάπολα"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_077" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Παντελής Βεκρής του Αντωνόυ, Κατάπολα"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q410> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1995"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 1995" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_077" ;
+    wdt:P2 "Νικόλαος Βεκρής" ;
+    wdt:P3 "1995"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    schema:description "Παντελής Βεκρής του Αντωνίου, Κατάπολα"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q410> .
+
+wd:Q411 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι \"Παπαντή\" στα Κατάπολα"@el ;
+    dcterms:created "1985"^^xsd:gYear ;
+    dcterms:creator "Παρασκευάς Ρούσσος" ;
+    dcterms:description "Το καΐκι \"Παπαντή\" στα Κατάπολα, Γιώργος και Κώστας Ρούσσος"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_078" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Το καΐκι \"Παπαντή\" στα Κατάπολα"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q411> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1985"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 1985" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_078" ;
+    wdt:P2 "Παρασκευάς Ρούσσος" ;
+    wdt:P3 "1985"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    schema:description "Το καΐκι \"Παπαντή\" στα Κατάπολα, Γιώργος και Κώστας Ρούσσος"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q411> .
+
+wd:Q412 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Δημήτρης Γαβαλάς στη Χώρα"@el ;
+    dcterms:contributor "Μ.Γ" ;
+    dcterms:creator "Δημήτρης Γαβαλάς" ;
+    dcterms:description "Δημήτρης Γαβαλάς, Χώρα"@el ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_094" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Δημήτρης Γαβαλάς στη Χώρα"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q412> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Γ" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_094" ;
+    wdt:P2 "Δημήτρης Γαβαλάς" ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "ψαράς, Χώρα" ;
+    schema:description "Δημήτρης Γαβαλάς, Χώρα"@el ;
+    schema:keywords "Χώρα"@el,
+        "ψαράς"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q412> .
+
+wd:Q413 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Ιωάννης Βεκρής στη Νικουριά"@el ;
+    dcterms:created "1960"^^xsd:gYear ;
+    dcterms:creator "Ιωάννης Η. Βεκρής" ;
+    dcterms:description "Παναγία Ακαθή, Νικουριά. Δεξιά Ιωάννης Βεκρής"@el ;
+    dcterms:identifier "cmt_amorgos_archival_ioannis i vekris_005" ;
+    dcterms:isPartOf wd:Q4 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Ιωάννης Βεκρής στη Νικουριά"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q413> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1960"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P11 "γ. 1960" ;
+    wdt:P14 "cmt_amorgos_archival_ioannis i vekris_005" ;
+    wdt:P2 "Ιωάννης Η. Βεκρής" ;
+    wdt:P3 "1960"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q4 ;
+    schema:description "Παναγία Ακαθή, Νικουριά. Δεξιά Ιωάννης Βεκρής"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q413> .
+
+wd:Q414 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το πλοίο \"Σκοπελίτης\""@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το πλοίο \"Σκοπελίτης\" σε δρομολόγιό του στις Μικρές Κυκλάδες"@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_015" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Κυκλάδες" ;
+    dcterms:title "Το πλοίο \"Σκοπελίτης\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q414> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P11 "γ. 1980" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_015" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P4 "Κυκλάδες" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "πλοίο, \"Σκοπελίτης\" , Μικρές Κυκλάδες" ;
+    schema:description "Το πλοίο \"Σκοπελίτης\" σε δρομολόγιό του στις Μικρές Κυκλάδες"@el ;
+    schema:keywords "\"Σκοπελίτης\""@el,
+        "Μικρές Κυκλάδες"@el,
+        "πλοίο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q414> .
+
+wd:Q415 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι \"Σκοπελίτης\" και το πλοίο \"Μαριάννα\""@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το καΐκι \"Σκοπελίτης\" και στο βάθος το πλοίο \"Μαριάννα\" στα Κατάπολα"@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_016" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Το καΐκι \"Σκοπελίτης\" και το πλοίο \"Μαριάννα\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q415> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P11 "γ. 1980" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_016" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "καΐκι, \"Σκοπελίτης\", πλοίο, \"Μαριάννα\", Κατάπολα" ;
+    schema:description "Το καΐκι \"Σκοπελίτης\" και στο βάθος το πλοίο \"Μαριάννα\" στα Κατάπολα"@el ;
+    schema:keywords "\"Μαριάννα\""@el,
+        "\"Σκοπελίτης\""@el,
+        "Κατάπολα"@el,
+        "καΐκι"@el,
+        "πλοίο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q415> .
+
+wd:Q416 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι  \"Δημήτριος\""@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:created "1990"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το καΐκι  \"Δημήτριος\" στις Σπέτσες"@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_017" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Σπέτσες" ;
+    dcterms:title "Το καΐκι  \"Δημήτριος\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q416> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1990"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P11 "γ. 1990" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_017" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1990"^^xsd:gYear ;
+    wdt:P4 "Σπέτσες" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "καΐκι,  \"Δημήτριος\", Σπέτσες" ;
+    schema:description "Το καΐκι  \"Δημήτριος\" στις Σπέτσες"@el ;
+    schema:keywords "\"Δημήτριος\""@el,
+        "Σπέτσες"@el,
+        "καΐκι"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q416> .
+
+wd:Q417 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το πλοίο \"Μαριάννα,\""@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το πλοίο \"Μαριάννα,\" με τον Μιχάλη Ψακή τον \"Μουγκό\""@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_018" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:title "Το πλοίο \"Μαριάννα,\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q417> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P11 "γ. 1980" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_018" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "πλοίο,  \"Μαριάννα,\" Μιχάλης Ψακής" ;
+    schema:description "Το πλοίο \"Μαριάννα,\" με τον Μιχάλη Ψακή τον \"Μουγκό\""@el ;
+    schema:keywords "\" Μιχάλης Ψακής"@el,
+        "\"Μαριάννα"@el,
+        "πλοίο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q417> .
+
+wd:Q418 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το πλοίο \"Σκοπελίτης\""@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το πλοίο \"Σκοπελίτης\" στην Ηρακλειά"@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_019" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Ηρακλειά" ;
+    dcterms:title "Το πλοίο \"Σκοπελίτης\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q418> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ. 1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P11 "γ. 1980" ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_019" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P4 "Ηρακλειά" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "πλοίο , \"Σκοπελίτης\", Ηρακλεία" ;
+    schema:description "Το πλοίο \"Σκοπελίτης\" στην Ηρακλειά"@el ;
+    schema:keywords "\"Σκοπελίτης\""@el,
+        "Ηρακλεία"@el,
+        "πλοίο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q418> .
+
+wd:Q419 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το πλοίο «Σποράδες»"@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:description "Το πλοίο «Σποράδες» εν πλω (μεταγενέστερα «Σκοπελίτης»)"@el ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_020" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:title "Το πλοίο «Σποράδες»"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q419> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_020" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "πλοίο, θάλασσα" ;
+    schema:description "Το πλοίο «Σποράδες» εν πλω (μεταγενέστερα «Σκοπελίτης»)"@el ;
+    schema:keywords "θάλασσα"@el,
+        "πλοίο"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q419> .
+
 wd:Q429 a schema:CreativeWork,
         schema:ImageObject ;
     dcterms:contributor "Μ.Κ." ;
@@ -2282,6 +2718,208 @@ wd:Q43 a schema:CreativeWork,
         "δίχτυα"@el,
         "καΐκι"@el ;
     schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q43> .
+
+wd:Q430 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Κώστας Σιγάλας βγάζει την ψαριά του"@el ;
+    dcterms:contributor "Αλέξη Αρετή" ;
+    dcterms:creator "Μιχάλης Κρόσμαν" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_034" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Κώστας Σιγάλας βγάζει την ψαριά του"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q430> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Αλέξη Αρετή" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_034" ;
+    wdt:P2 "Μιχάλης Κρόσμαν" ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "Κώστας Σιγάλας, ψαράς" ;
+    schema:keywords "Κώστας Σιγάλας"@el,
+        "ψαράς"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q430> .
+
+wd:Q431 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ψαριά από αστακούς στον \"Τίμιο Σταυρό\""@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:created "1990"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_050" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ψαριά από αστακούς στον \"Τίμιο Σταυρό\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q431> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1990"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P11 "γ.  1990" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_050" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1990"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καϊκι, ψάρια" ;
+    schema:keywords "καϊκι"@el,
+        "ψάρια"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q431> .
+
+wd:Q432 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο \"Τίμιος Σταυρός\" στην Σύρο"@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:created "1998"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_052" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Σύρος" ;
+    dcterms:title "Ο \"Τίμιος Σταυρός\" στην Σύρο"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q432> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1998"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P11 "γ.  1998" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_052" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1998"^^xsd:gYear ;
+    wdt:P4 "Σύρος" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καϊκι, ψάρια, Σ´υρο" ;
+    schema:keywords "Σ´υρο"@el,
+        "καϊκι"@el,
+        "ψάρια"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q432> .
+
+wd:Q433 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Μιχάλης Βεκρής"@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_053" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Μιχάλης Βεκρής"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q433> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_053" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "Μιχάλης Βεκρής" ;
+    schema:keywords "Μιχάλης Βεκρής"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q433> .
+
+wd:Q434 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Η Μαρία Βεκρή ξεδιαλέγει την ψαριά στο καϊκι \"Τίμιος Σταυρός\""@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:created "1987"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_055" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Η Μαρία Βεκρή ξεδιαλέγει την ψαριά στο καϊκι \"Τίμιος Σταυρός\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q434> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1987"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P11 "γ.  1987" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_055" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1987"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καϊκι, ψάρια" ;
+    schema:keywords "καϊκι"@el,
+        "ψάρια"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q434> .
+
+wd:Q435 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Νικήτας Βεκρής βάφει το καϊκι του"@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:created "1980"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_057" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Νικήτας Βεκρής βάφει το καϊκι του"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q435> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1980"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P11 "γ.  1980" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_057" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1980"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καϊκι" ;
+    schema:keywords "καϊκι"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q435> .
+
+wd:Q436 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Ο Νικήτας Βεκρής στον \"Τίμιο Σταυρό\""@el ;
+    dcterms:contributor "Χρόνη Αγγελική" ;
+    dcterms:created "1985"^^xsd:gYear ;
+    dcterms:creator "Μιχάλης Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_hozoviotissa_060" ;
+    dcterms:isPartOf wd:Q3 ;
+    dcterms:spatial "Αμοργός" ;
+    dcterms:title "Ο Νικήτας Βεκρής στον \"Τίμιο Σταυρό\""@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q436> ;
+    skos:note "Ημερομηνία (αρχική μορφή): γ.  1985"@el ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Χρόνη Αγγελική" ;
+    wdt:P11 "γ.  1985" ;
+    wdt:P14 "cmt_amorgos_archival_hozoviotissa_060" ;
+    wdt:P2 "Μιχάλης Βεκρής" ;
+    wdt:P3 "1985"^^xsd:gYear ;
+    wdt:P4 "Αμοργός" ;
+    wdt:P5 wd:Q3 ;
+    wdt:P6 "καϊκι" ;
+    schema:keywords "καϊκι"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q436> .
+
+wd:Q437 a schema:CreativeWork,
+        schema:ImageObject ;
+    rdfs:label "Το καΐκι «Πανορμίτης»"@el ;
+    dcterms:contributor "Μ.Κ." ;
+    dcterms:creator "Γιάννης Σκοπελίτης" ;
+    dcterms:identifier "cmt_amorgos_archival_skopelitis_029" ;
+    dcterms:isPartOf wd:Q5 ;
+    dcterms:spatial "Μικρές Κυκλάδες" ;
+    dcterms:title "Το καΐκι «Πανορμίτης»"@el ;
+    dcterms:type dcmitype:StillImage ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q437> ;
+    prov:wasDerivedFrom <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    wdt:P1 wd:Q1 ;
+    wdt:P10 "Μ.Κ." ;
+    wdt:P14 "cmt_amorgos_archival_skopelitis_029" ;
+    wdt:P2 "Γιάννης Σκοπελίτης" ;
+    wdt:P4 "Μικρές Κυκλάδες" ;
+    wdt:P5 wd:Q5 ;
+    wdt:P6 "καΐκι, θάλασσα" ;
+    schema:keywords "θάλασσα"@el,
+        "καΐκι"@el ;
+    schema:url <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q437> .
 
 wd:Q44 a schema:CreativeWork,
         schema:ImageObject ;
@@ -9432,20 +10070,6 @@ wd:Q458 a dcmitype:Collection,
     schema:description "Διαγράμματα και φωτογραφίες του μεταλλειολόγου Στέφανου Εξαδάκτυλου, ο οποίος εργάστηκε στα ορυχεία σιδήρου του Μεγάλου Λιβαδιού στη Σέριφο τη δεκαετία του 1950, σε συνεργασία με τα Γενικά Αρχεία του Κράτους - Τμήμα ΓΑΚ Σύρου."@el,
         "Diagrams and photographs from mining engineer Stefanos Exadactylos, who worked at the Mega Livadi iron mines on Serifos in the 1950s, presented in partnership with the Historical Archive of Syros - GAK."@en .
 
-wd:Q4 a dcmitype:Collection,
-        dcat:Dataset ;
-    rdfs:label "Ιωάννης Η. Βεκρής"@el ;
-    dcterms:creator "Ιωάννης Η. Βεκρής" ;
-    dcterms:identifier "cmt_amorgos_archival_collection_ioannis i vekris" ;
-    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:title "Ιωάννης Η. Βεκρής"@el ;
-    void:entities 12 ;
-    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q4> ;
-    wdt:P1 wd:Q2 ;
-    wdt:P14 "cmt_amorgos_archival_collection_ioannis i vekris" ;
-    wdt:P2 "Ιωάννης Η. Βεκρής" .
-
 wd:Q444 a dcmitype:Collection,
         dcat:Dataset ;
     rdfs:label "Αρχείο Μεταλλευτικού Μουσείου Μήλου"@el,
@@ -9468,6 +10092,20 @@ wd:Q444 a dcmitype:Collection,
     wdt:P6 "εξόρυξη, θείο, βαρύτης, μαγγάνιο, Μήλος, μεταλλευτικό μουσείο" ;
     schema:description "Προφορικές μαρτυρίες και φωτογραφίες που φυλάσσει το Μεταλλευτικό Μουσείο Μήλου (Αδάμαντας, ίδρ. 1998), σχετικά με την εξόρυξη και επεξεργασία θείου, βαρύτη και μαγγανίου στη Μήλο, οι οποίες ψηφιοποιήθηκαν σε συνεργασία με το Δίκτυο Αρχιπέλαγος."@el,
         "Oral history interviews and photographs held by the Milos Mining Museum (Adamantas, est. 1998), documenting sulphur, baryte and manganese mining and processing on Milos, digitized in collaboration with Archipelago Network."@en .
+
+wd:Q4 a dcmitype:Collection,
+        dcat:Dataset ;
+    rdfs:label "Ιωάννης Η. Βεκρής"@el ;
+    dcterms:creator "Ιωάννης Η. Βεκρής" ;
+    dcterms:identifier "cmt_amorgos_archival_collection_ioannis i vekris" ;
+    dcterms:isPartOf <https://archipelago-wikibase.wikibase.cloud/dataset/archipelago> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Ιωάννης Η. Βεκρής"@el ;
+    void:entities 12 ;
+    rdfs:seeAlso <https://archipelago-wikibase.wikibase.cloud/wiki/Item:Q4> ;
+    wdt:P1 wd:Q2 ;
+    wdt:P14 "cmt_amorgos_archival_collection_ioannis i vekris" ;
+    wdt:P2 "Ιωάννης Η. Βεκρής" .
 
 wd:Q460 a dcmitype:Collection,
         dcat:Dataset ;
@@ -9644,7 +10282,7 @@ wd:Q3 a dcmitype:Collection,
     dcterms:publisher "Archipelago Network" ;
     dcterms:title "Βάση Γνώσης Archipelago — Ψηφιακές Κυκλάδες"@el,
         "Archipelago Knowledge Base — Digital Cyclades"@en ;
-    void:entities 301 ;
+    void:entities 325 ;
     void:sparqlEndpoint <https://archipelago-wikibase.wikibase.cloud/query/sparql> ;
     void:uriSpace "https://archipelago-wikibase.wikibase.cloud/entity/" ;
     void:vocabulary dcterms:,

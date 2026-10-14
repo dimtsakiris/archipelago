@@ -7,9 +7,9 @@ Metadata of the Archipelago Network Wikibase ("Digital Cyclades": Amorgos fishin
 | File | Content |
 |---|---|
 | `archipelago_sample.ttl` / `.jsonld` | **Sample: 1 item per collection** (19 items) + all 19 collections + dataset description |
-| `archipelago_full.ttl` / `.nt` / `.jsonld` | Full dump of all items with a known Q-ID (282 items, 19 collections) |
+| `archipelago_full.ttl` / `.nt` / `.jsonld` | Full dump: all 306 items and 19 collections |
 | `sample_items.csv` | Which item represents each collection |
-| `skipped_no_qid.txt` | Items whose Q-ID is not yet confirmed (24, Amorgos, re-created items) |
+| `qid_map.csv` | identifier (P14) → Q-ID map exported from the Query Service (322 rows) |
 | `example_queries.rq` | SPARQL queries valid on both the live endpoint and the dump |
 
 ## Model
@@ -29,8 +29,7 @@ Metadata of the Archipelago Network Wikibase ("Digital Cyclades": Amorgos fishin
 python scripts/build_rdf.py \
   --amorgos-items am/items_clean.csv --amorgos-collections am/collections_clean.csv \
   --mining-items mi/items_clean.csv --mining-collections mi/collections_clean.csv \
-  --mining-qids query__2_.csv --amorgos-batch batches/.../batch3a_backfill_identifiers.qs \
-  --extra-qids all_ids.csv --out-dir rdf_dataset
+  --extra-qids rdf_dataset/qid_map.csv --out-dir rdf_dataset
 ```
-To include the 24 skipped items run in the Query Service
-`SELECT ?item ?id WHERE { ?item wdt:P1 wd:Q1 ; wdt:P14 ?id }`, download as CSV and pass it as `--extra-qids`.
+Refresh `qid_map.csv` with this query (full URIs; the UI's `wdt:` prefix may return 0):
+`SELECT ?item ?id WHERE { ?item <https://archipelago-wikibase.wikibase.cloud/prop/direct/P14> ?id }`
