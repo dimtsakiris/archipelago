@@ -6,7 +6,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font:15px system-ui,sans-seri
 header{padding:12px 16px;border-bottom:1px solid var(--bd)}h1{font-size:18px;margin:0 0 4px}p{margin:0;color:var(--mut);font-size:13px}
 #bar{display:flex;gap:8px;flex-wrap:wrap;padding:8px 16px}select,button{font:inherit;padding:4px 8px}
 #net{height:calc(100vh - 130px);min-height:360px}#info{padding:6px 16px;font-size:13px;color:var(--mut)}a{color:inherit}</style></head><body>
-<header><h1>Archipelago Knowledge Graph</h1><p>19 συλλογές · 306 items · κλικ σε item για άνοιγμα στο Wikibase · <a href="https://archipelago-wikibase.wikibase.cloud/query/sparql">SPARQL endpoint</a></p></header>
+<header><h1>Archipelago Knowledge Graph</h1><p><span id="cnt"></span> · κλικ σε item για άνοιγμα στο Wikibase · <a href="https://archipelago-wikibase.wikibase.cloud/query/sparql">SPARQL endpoint</a></p></header>
 <div id="bar"><label>Συλλογή: <select id="sel"></select></label><label>Τύπος: <select id="typ"><option value="">όλοι</option></select></label><button id="rst">Επαναφορά</button></div>
 <div id="net"></div><div id="info">Κλικ σε κόμβο.</div>
 <script>
@@ -26,5 +26,6 @@ function draw(){
   {physics:{solver:"forceAtlas2Based",stabilization:{iterations:200}},interaction:{hover:true},edges:{smooth:false}});
  net.on("click",p=>{if(p.nodes.length){const q=p.nodes[0];document.getElementById("info").innerHTML=`<a target="_blank" href="${B+q}">${q} → άνοιγμα στο Wikibase</a>`}});
  document.getElementById("info").textContent=`${nodes.length} κόμβοι, ${edges.length} συνδέσεις`;}
+document.getElementById('cnt').textContent=Object.keys(D.collections).length+' συλλογές · '+D.items.length+' items';
 sel.onchange=typ.onchange=draw;document.getElementById("rst").onclick=()=>{sel.value="";typ.value="";draw()};draw();
 </script></body></html>
