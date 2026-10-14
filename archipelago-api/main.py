@@ -25,6 +25,8 @@ from sparql_client import (
     get_stats,
 )
 
+from oai import router as oai_router  # OAI-PMH endpoint for Repox harvesting
+
 app = FastAPI(
     title="Archipelago Wikibase API",
     description=(
@@ -43,6 +45,9 @@ app.add_middleware(
     allow_methods=["GET"],
     allow_headers=["*"],
 )
+
+
+app.include_router(oai_router)
 
 
 @app.get("/", tags=["meta"])

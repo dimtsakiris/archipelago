@@ -97,3 +97,8 @@ repo if the Wikibase schema changes. Current mapping:
   `registration_date` (P9), `documenter` (P10), `notes` (P11),
   `an_project` (P12), `same_as` (P13), `identifier` (P14),
   `source_url` (P15), `digital_object_type` (P16)
+
+## OAI-PMH endpoint for Repox
+`GET /oai` is a minimal OAI-PMH 2.0 provider (Identify, ListSets, ListMetadataFormats, ListIdentifiers,
+ListRecords, GetRecord; formats `oai_dc` and `edm`; sets = collections; resumption tokens; `from`/`until`).
+See `docs/REPOX_INTEGRATION.md` at the repo root.
