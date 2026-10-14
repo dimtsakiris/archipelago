@@ -204,12 +204,13 @@
       margin-bottom: 8px;
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Archipelago Knowledge Base</h1>
-      <p>SPARQL Query Interface — Query semantic data from Wikibase</p>
+      <p>SPARQL Query Interface — Query semantic data from Wikibase · <a href="#knowledge-graph" style="color:#0066cc;">Knowledge Graph</a> · <a href="#rdf-dataset" style="color:#0066cc;">RDF Dataset</a></p>
     </div>
   </header>
 
@@ -251,6 +252,29 @@ LIMIT 50"></textarea>
       </div>
 
       <div class="status-area" id="statusArea"></div>
+    </div>
+
+    <div class="card" id="knowledge-graph">
+      <h2 style="font-size: 16px; margin-bottom: 4px;">🕸️ Knowledge Graph</h2>
+      <p style="font-size:12px;color:#666;margin-bottom:10px;">Interactive view of collections (yellow boxes) and their items (dots), loaded live from the SPARQL endpoint. Click an item to open it in Wikibase.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center;">
+        <select id="kgColl" style="padding:6px;"><option value="">All collections</option></select>
+        <select id="kgType" style="padding:6px;"><option value="">All types</option><option>Εικόνα</option><option>Βίντεο</option><option>Ήχος</option><option>Τρισδιάστατο μοντέλο</option></select>
+        <button onclick="loadGraph()" style="padding:6px 14px;">Load graph</button>
+        <span id="kgInfo" style="font-size:12px;color:#666;"></span>
+      </div>
+      <div id="kgNet" style="height:520px;border:1px solid #ddd;border-radius:6px;"></div>
+      <p style="font-size:12px;color:#666;margin-top:8px;">Blue = image · orange = video · green = audio · purple = 3D model. Tip: pick one collection first; all 306 items at once is dense.</p>
+    </div>
+
+    <div class="card" id="rdf-dataset">
+      <h2 style="font-size: 16px; margin-bottom: 4px;">📦 Open RDF Dataset</h2>
+      <p style="font-size:12px;color:#666;margin-bottom:10px;">The metadata as RDF (same URIs as the endpoint; Dublin Core / schema.org / DCAT). Licence: CC BY 4.0 (provisional).</p>
+      <ul style="font-size:14px;margin-left:20px;line-height:1.9;">
+        <li><b>Sample</b> (1 item per collection, 19 items): <a href="https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_sample.ttl" style="color:#0066cc;">Turtle</a> · <a href="https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_sample.jsonld" style="color:#0066cc;">JSON-LD</a></li>
+        <li><b>Full dump</b> (306 items, 19 collections): <a href="https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.ttl" style="color:#0066cc;">Turtle</a> · <a href="https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.nt" style="color:#0066cc;">N-Triples</a> · <a href="https://raw.githubusercontent.com/dimtsakiris/archipelago/main/rdf_dataset/archipelago_full.jsonld" style="color:#0066cc;">JSON-LD</a></li>
+        <li><a href="https://github.com/dimtsakiris/archipelago/tree/main/rdf_dataset" style="color:#0066cc;">README, example queries &amp; ID map on GitHub</a></li>
+      </ul>
     </div>
 
     <div class="card" id="query-reference">
@@ -657,6 +681,54 @@ SELECT ?item ?itemLabel ?place WHERE {
         executeQuery();
       }
     });
+
+    // ---- Knowledge Graph view (live from endpoint) ----
+    const KG_P = 'https://archipelago-wikibase.wikibase.cloud/prop/direct/';
+    const KG_COL = {"Εικόνα":"#4e9af1","Βίντεο":"#e8743b","Ήχος":"#2fa56b","Τρισδιάστατο μοντέλο":"#a35fd1"};
+    async function kgQuery(q) {
+      const r = await fetch(SPARQL_ENDPOINT, {method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded','Accept':'application/sparql-results+json'},
+        body:'query='+encodeURIComponent(q)});
+      if (!r.ok) throw new Error('HTTP '+r.status);
+      return (await r.json()).results.bindings;
+    }
+    const kgId = u => u.value.split('/').pop();
+    async function kgInit() {
+      try {
+        const rows = await kgQuery(`SELECT ?c ?l WHERE { ?c <${KG_P}P1> <https://archipelago-wikibase.wikibase.cloud/entity/Q2> ; <http://www.w3.org/2000/01/rdf-schema#label> ?l . FILTER(lang(?l)="el") } ORDER BY ?l`);
+        const sel = document.getElementById('kgColl');
+        rows.forEach(r => sel.insertAdjacentHTML('beforeend', `<option value="${kgId(r.c)}">${r.l.value}</option>`));
+      } catch(e) { document.getElementById('kgInfo').textContent = 'Could not load collections: '+e.message; }
+    }
+    async function loadGraph() {
+      const info = document.getElementById('kgInfo'); info.textContent = 'Loading…';
+      const c = document.getElementById('kgColl').value, t = document.getElementById('kgType').value;
+      const E = 'https://archipelago-wikibase.wikibase.cloud/entity/';
+      const q = `SELECT ?i ?il ?c ?cl ?t WHERE {
+        ?i <${KG_P}P1> <${E}Q1> ; <${KG_P}P5> ?c ; <http://www.w3.org/2000/01/rdf-schema#label> ?il .
+        ?c <http://www.w3.org/2000/01/rdf-schema#label> ?cl .
+        OPTIONAL { ?i <${KG_P}P16> ?t }
+        FILTER(lang(?il)="el" && lang(?cl)="el")
+        ${c ? `FILTER(?c = <${E}${c}>)` : ''}
+        ${t ? `FILTER(?t = "${t}")` : ''}
+      }`;
+      try {
+        const rows = await kgQuery(q);
+        const nodes = new Map(), edges = [];
+        rows.forEach(r => {
+          const ci = kgId(r.c), ii = kgId(r.i), ty = r.t ? r.t.value : 'Εικόνα', l = r.il.value;
+          if (!nodes.has(ci)) nodes.set(ci, {id:ci,label:r.cl.value,shape:'box',color:'#f2c744',font:{color:'#222',size:14},margin:8});
+          nodes.set(ii, {id:ii,label:l.length>28?l.slice(0,26)+'…':l,title:l+' ('+ii+')',shape:'dot',size:8,color:KG_COL[ty]||'#888',font:{size:10}});
+          edges.push({from:ii,to:ci,color:{opacity:.35}});
+        });
+        const net = new vis.Network(document.getElementById('kgNet'),
+          {nodes:new vis.DataSet([...nodes.values()]),edges:new vis.DataSet(edges)},
+          {physics:{solver:'forceAtlas2Based',stabilization:{iterations:200}},interaction:{hover:true},edges:{smooth:false}});
+        net.on('click', p => { if (p.nodes.length && /^Q\d+$/.test(p.nodes[0])) window.open('https://archipelago-wikibase.wikibase.cloud/wiki/Item:'+p.nodes[0],'_blank'); });
+        info.textContent = rows.length+' items, '+(nodes.size-rows.length)+' collection(s)';
+      } catch(e) { info.textContent = 'Error: '+e.message; }
+    }
+    kgInit();
   </script>
 </body>
 </html>
