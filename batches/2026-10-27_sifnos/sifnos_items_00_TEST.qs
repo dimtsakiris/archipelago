@@ -1,0 +1,105 @@
+CREATE
+LAST|Lel|"pos_xenakis_garrigues_0001"
+LAST|Len|"pos_xenakis_garrigues_0001"
+LAST|P1|Q1
+LAST|P3|+1983-00-00T00:00:00Z/9
+LAST|P11|"Καλοκαίρι 1983"
+LAST|P20|"Summer 1983"
+LAST|P11|"Αρχικό αρχείο: E. Garrigues Photo Album/img20221217_18080609.jpg Όνομα αρχείου: pos_xenakis_garrigues_0001.jpg Λεύκωμα: «Σίφνος – Συλλογή χειροποίητων αντικειμένων Σίφνου – Αγ. Ελεήμων, Καταβατή Σίφνου – Φωτογραφίες: E. Garrigues, Παρίσι – Καλοκαίρι 1983» (σελίδα τίτλου του λευκώματος) Ψηφιοποίηση (σάρωση) 2022-12-17 (από το όνομα αρχείου) Σάρωση σελίδας με 2 φωτογραφίες· κάθε"
+LAST|P11|"φωτογραφία αποθηκεύτηκε ξεχωριστά: pos_xenakis_garrigues_0001-01, pos_xenakis_garrigues_0001-02 Σχετικά: pos_xenakis_garrigues_0001-01, pos_xenakis_garrigues_0001-02"
+LAST|P20|"Original file: E. Garrigues Photo Album/img20221217_18080609.jpg Filename: pos_xenakis_garrigues_0001.jpg Album: 'Sifnos – Collection of handmade objects of Sifnos – Ag. Eleimon, Katavati, Sifnos – Photographs: E. Garrigues, Paris – Summer 1983' (album title page) Digitised (scanned) 2022-12-17 (from filename) Page scan with 2 photographs; each saved separately:"
+LAST|P20|"pos_xenakis_garrigues_0001-01, pos_xenakis_garrigues_0001-02 Related: pos_xenakis_garrigues_0001-01, pos_xenakis_garrigues_0001-02"
+LAST|P2|"E. Garrigues"
+LAST|P17|"E. Garrigues"
+LAST|P4|"Άγιος Ελεήμων, Καταβατή (προς επιβεβαίωση)"
+LAST|P18|"Agios Eleimon, Katavati (to be confirmed)"
+LAST|P7|"Ασπρόμαυρο"
+LAST|P12|"Αγγειοπλαστική της Σίφνου (2023-24)"
+LAST|P21|"Pottery of Sifnos (2023-24)"
+LAST|P14|"pos_xenakis_garrigues_0001"
+LAST|P16|"Φωτογραφία"
+LAST|P5|Q643
+CREATE
+LAST|Lel|"pos_xenakis_garrigues_0001-01"
+LAST|Len|"pos_xenakis_garrigues_0001-01"
+LAST|P1|Q1
+LAST|P3|+1983-00-00T00:00:00Z/9
+LAST|P11|"Καλοκαίρι 1983"
+LAST|P20|"Summer 1983"
+LAST|P11|"Αρχικό αρχείο: E. Garrigues Photo Album/img20221217_18080609.jpg – μέρος/part 1 Όνομα αρχείου: pos_xenakis_garrigues_0001-01.jpg Φωτογραφία 1 που αποκόπηκε από τη σάρωση pos_xenakis_garrigues_0001.jpg (αρχικό αρχείο «img20221217_18080609.jpg») Ψηφιοποίηση (σάρωση) 2022-12-17 (από το όνομα αρχείου) Λεύκωμα: «Σίφνος – Συλλογή χειροποίητων αντικειμένων Σίφνου – Αγ. Ελεήμων, Καταβατή Σίφνου"
+LAST|P11|"– Φωτογραφίες: E. Garrigues, Παρίσι – Καλοκαίρι 1983» (σελίδα τίτλου του λευκώματος) Σχετικά: pos_xenakis_garrigues_0001"
+LAST|P20|"Original file: E. Garrigues Photo Album/img20221217_18080609.jpg – μέρος/part 1 Filename: pos_xenakis_garrigues_0001-01.jpg Photograph 1 cropped from scan pos_xenakis_garrigues_0001.jpg (original file 'img20221217_18080609.jpg') Digitised (scanned) 2022-12-17 (from filename) Album: 'Sifnos – Collection of handmade objects of Sifnos – Ag. Eleimon, Katavati, Sifnos – Photographs: E."
+LAST|P20|"Garrigues, Paris – Summer 1983' (album title page) Related: pos_xenakis_garrigues_0001"
+LAST|P2|"E. Garrigues"
+LAST|P17|"E. Garrigues"
+LAST|P4|"Άγιος Ελεήμων, Καταβατή (προς επιβεβαίωση)"
+LAST|P18|"Agios Eleimon, Katavati (to be confirmed)"
+LAST|P7|"Ασπρόμαυρο"
+LAST|P12|"Αγγειοπλαστική της Σίφνου (2023-24)"
+LAST|P21|"Pottery of Sifnos (2023-24)"
+LAST|P14|"pos_xenakis_garrigues_0001-01"
+LAST|P16|"Φωτογραφία"
+LAST|P5|Q643
+CREATE
+LAST|Lel|"pos_xenakis_garrigues_0001-02"
+LAST|Len|"pos_xenakis_garrigues_0001-02"
+LAST|P1|Q1
+LAST|P3|+1983-00-00T00:00:00Z/9
+LAST|P11|"Καλοκαίρι 1983"
+LAST|P20|"Summer 1983"
+LAST|P11|"Αρχικό αρχείο: E. Garrigues Photo Album/img20221217_18080609.jpg – μέρος/part 2 Όνομα αρχείου: pos_xenakis_garrigues_0001-02.jpg Φωτογραφία 2 που αποκόπηκε από τη σάρωση pos_xenakis_garrigues_0001.jpg (αρχικό αρχείο «img20221217_18080609.jpg») Ψηφιοποίηση (σάρωση) 2022-12-17 (από το όνομα αρχείου) Λεύκωμα: «Σίφνος – Συλλογή χειροποίητων αντικειμένων Σίφνου – Αγ. Ελεήμων, Καταβατή Σίφνου"
+LAST|P11|"– Φωτογραφίες: E. Garrigues, Παρίσι – Καλοκαίρι 1983» (σελίδα τίτλου του λευκώματος) Σχετικά: pos_xenakis_garrigues_0001"
+LAST|P20|"Original file: E. Garrigues Photo Album/img20221217_18080609.jpg – μέρος/part 2 Filename: pos_xenakis_garrigues_0001-02.jpg Photograph 2 cropped from scan pos_xenakis_garrigues_0001.jpg (original file 'img20221217_18080609.jpg') Digitised (scanned) 2022-12-17 (from filename) Album: 'Sifnos – Collection of handmade objects of Sifnos – Ag. Eleimon, Katavati, Sifnos – Photographs: E."
+LAST|P20|"Garrigues, Paris – Summer 1983' (album title page) Related: pos_xenakis_garrigues_0001"
+LAST|P2|"E. Garrigues"
+LAST|P17|"E. Garrigues"
+LAST|P4|"Άγιος Ελεήμων, Καταβατή (προς επιβεβαίωση)"
+LAST|P18|"Agios Eleimon, Katavati (to be confirmed)"
+LAST|P7|"Ασπρόμαυρο"
+LAST|P12|"Αγγειοπλαστική της Σίφνου (2023-24)"
+LAST|P21|"Pottery of Sifnos (2023-24)"
+LAST|P14|"pos_xenakis_garrigues_0001-02"
+LAST|P16|"Φωτογραφία"
+LAST|P5|Q643
+CREATE
+LAST|Lel|"pos_xenakis_garrigues_0002"
+LAST|Len|"pos_xenakis_garrigues_0002"
+LAST|P1|Q1
+LAST|P3|+1983-00-00T00:00:00Z/9
+LAST|P11|"Καλοκαίρι 1983"
+LAST|P20|"Summer 1983"
+LAST|P11|"Αρχικό αρχείο: E. Garrigues Photo Album/img20221217_18100408.jpg Όνομα αρχείου: pos_xenakis_garrigues_0002.jpg Λεύκωμα: «Σίφνος – Συλλογή χειροποίητων αντικειμένων Σίφνου – Αγ. Ελεήμων, Καταβατή Σίφνου – Φωτογραφίες: E. Garrigues, Παρίσι – Καλοκαίρι 1983» (σελίδα τίτλου του λευκώματος) Ψηφιοποίηση (σάρωση) 2022-12-17 (από το όνομα αρχείου) Σάρωση σελίδας με 2 φωτογραφίες· κάθε"
+LAST|P11|"φωτογραφία αποθηκεύτηκε ξεχωριστά: pos_xenakis_garrigues_0002-01, pos_xenakis_garrigues_0002-02 Σχετικά: pos_xenakis_garrigues_0002-01, pos_xenakis_garrigues_0002-02"
+LAST|P20|"Original file: E. Garrigues Photo Album/img20221217_18100408.jpg Filename: pos_xenakis_garrigues_0002.jpg Album: 'Sifnos – Collection of handmade objects of Sifnos – Ag. Eleimon, Katavati, Sifnos – Photographs: E. Garrigues, Paris – Summer 1983' (album title page) Digitised (scanned) 2022-12-17 (from filename) Page scan with 2 photographs; each saved separately:"
+LAST|P20|"pos_xenakis_garrigues_0002-01, pos_xenakis_garrigues_0002-02 Related: pos_xenakis_garrigues_0002-01, pos_xenakis_garrigues_0002-02"
+LAST|P2|"E. Garrigues"
+LAST|P17|"E. Garrigues"
+LAST|P4|"Άγιος Ελεήμων, Καταβατή (προς επιβεβαίωση)"
+LAST|P18|"Agios Eleimon, Katavati (to be confirmed)"
+LAST|P7|"Ασπρόμαυρο"
+LAST|P12|"Αγγειοπλαστική της Σίφνου (2023-24)"
+LAST|P21|"Pottery of Sifnos (2023-24)"
+LAST|P14|"pos_xenakis_garrigues_0002"
+LAST|P16|"Φωτογραφία"
+LAST|P5|Q643
+CREATE
+LAST|Lel|"pos_xenakis_garrigues_0002-01"
+LAST|Len|"pos_xenakis_garrigues_0002-01"
+LAST|P1|Q1
+LAST|P3|+1983-00-00T00:00:00Z/9
+LAST|P11|"Καλοκαίρι 1983"
+LAST|P20|"Summer 1983"
+LAST|P11|"Αρχικό αρχείο: E. Garrigues Photo Album/img20221217_18100408.jpg – μέρος/part 1 Όνομα αρχείου: pos_xenakis_garrigues_0002-01.jpg Φωτογραφία 1 που αποκόπηκε από τη σάρωση pos_xenakis_garrigues_0002.jpg (αρχικό αρχείο «img20221217_18100408.jpg») Ψηφιοποίηση (σάρωση) 2022-12-17 (από το όνομα αρχείου) Λεύκωμα: «Σίφνος – Συλλογή χειροποίητων αντικειμένων Σίφνου – Αγ. Ελεήμων, Καταβατή Σίφνου"
+LAST|P11|"– Φωτογραφίες: E. Garrigues, Παρίσι – Καλοκαίρι 1983» (σελίδα τίτλου του λευκώματος) Σχετικά: pos_xenakis_garrigues_0002"
+LAST|P20|"Original file: E. Garrigues Photo Album/img20221217_18100408.jpg – μέρος/part 1 Filename: pos_xenakis_garrigues_0002-01.jpg Photograph 1 cropped from scan pos_xenakis_garrigues_0002.jpg (original file 'img20221217_18100408.jpg') Digitised (scanned) 2022-12-17 (from filename) Album: 'Sifnos – Collection of handmade objects of Sifnos – Ag. Eleimon, Katavati, Sifnos – Photographs: E."
+LAST|P20|"Garrigues, Paris – Summer 1983' (album title page) Related: pos_xenakis_garrigues_0002"
+LAST|P2|"E. Garrigues"
+LAST|P17|"E. Garrigues"
+LAST|P4|"Άγιος Ελεήμων, Καταβατή (προς επιβεβαίωση)"
+LAST|P18|"Agios Eleimon, Katavati (to be confirmed)"
+LAST|P7|"Ασπρόμαυρο"
+LAST|P12|"Αγγειοπλαστική της Σίφνου (2023-24)"
+LAST|P21|"Pottery of Sifnos (2023-24)"
+LAST|P14|"pos_xenakis_garrigues_0002-01"
+LAST|P16|"Φωτογραφία"
+LAST|P5|Q643
