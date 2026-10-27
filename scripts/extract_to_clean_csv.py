@@ -56,11 +56,14 @@ CANONICAL_ITEM_FIELDS = [
     "date", "place", "keywords", "an_project", "color", "method",
     "collection_title", "notes", "registration_date", "documenter",
     "source_url", "digital_type",
+    # English values for the parallel EN properties (P17-P21); blank when not available
+    "creator_en", "place_en", "keywords_en", "an_project_en", "notes_en", "date_en",
 ]
 
 CANONICAL_COLLECTION_FIELDS = [
     "identifier", "title", "title_en", "creator", "description", "description_en",
     "keywords", "an_project", "method", "registration_date", "documenter", "notes",
+    "creator_en", "keywords_en", "an_project_en", "notes_en",
 ]
 
 
@@ -229,6 +232,66 @@ def extract_bilingual(file_el, file_en):
     return items, collections
 
 
+# ---------------------------------------------------------------------------
+# Extractor: "sifnos" — ONE workbook with ITEM_GR / ITEM_EN / COLLECTION_GR / COLLECTION_EN
+# (Pottery of Sifnos datathon template; same columns as the bilingual template,
+#  but no source_url column and the English values live in the *_EN sheets)
+# ---------------------------------------------------------------------------
+def _norm_date_note_en(en_date):
+    return _clean(en_date)
+
+
+def extract_sifnos(file_path):
+    """
+    ITEM_* columns (0-indexed): 2 identifier, 3 title, 4 creator, 5 description,
+    6 date, 7 place, 10 digital_type, 11 europeana_type, 14 keywords, 15 an_project,
+    16 color, 17 method, 18 collection_title, 19 notes, 20 registration_date,
+    21 documenter.
+    COLLECTION_* columns: 1 identifier, 2 title, 3 creator, 4 description,
+    5 keywords, 6 an_project, 7 method, 8 registration_date, 9 documenter, 10 notes.
+    Draft records: many titles/descriptions are still empty. Empty English fields stay empty;
+    build_import.py falls back to the identifier as label so the item can still be created.
+    """
+    wb = openpyxl.load_workbook(file_path, data_only=True)
+
+    def data_rows(ws, idcol):
+        return [r for r in ws.iter_rows(min_row=3, values_only=True) if r and r[idcol] not in (None, "")]
+
+    g, e = data_rows(wb["ITEM_GR"], 2), data_rows(wb["ITEM_EN"], 2)
+    if [r[2] for r in g] != [r[2] for r in e]:
+        raise ValueError("ITEM_GR / ITEM_EN identifiers differ or are in a different order")
+    items = []
+    for el, en in zip(g, e):
+        items.append({
+            "identifier": _clean(el[2]), "title": _clean(el[3]), "title_en": _clean(en[3]),
+            "creator": _clean(el[4]), "creator_en": _clean(en[4]),
+            "description": _clean(el[5]), "description_en": _clean(en[5]),
+            "date": el[6],
+            "place": _clean(el[7]), "place_en": _clean(en[7]),
+            "keywords": _clean(el[14]), "keywords_en": _clean(en[14]),
+            "an_project": _clean(el[15]), "an_project_en": _clean(en[15]),
+            "color": _clean(el[16]), "method": _clean(el[17]),
+            "collection_title": _clean(el[18]),
+            "notes": _clean(el[19]), "notes_en": _clean(en[19]),
+            "registration_date": _clean(el[20]), "documenter": _clean(el[21]),
+            "source_url": "", "digital_type": _clean(el[10]),
+            "date_en": _clean(en[6]),
+        })
+    gc, ec = data_rows(wb["COLLECTION_GR"], 1), data_rows(wb["COLLECTION_EN"], 1)
+    colls = []
+    for el, en in zip(gc, ec):
+        colls.append({
+            "identifier": _clean(el[1]), "title": _clean(el[2]), "title_en": _clean(en[2]),
+            "creator": _clean(el[3]), "creator_en": _clean(en[3]),
+            "description": _clean(el[4]), "description_en": _clean(en[4]),
+            "keywords": _clean(el[5]), "keywords_en": _clean(en[5]),
+            "an_project": _clean(el[6]), "an_project_en": _clean(en[6]),
+            "method": _clean(el[7]), "registration_date": _clean(el[8]),
+            "documenter": _clean(el[9]), "notes": _clean(el[10]), "notes_en": _clean(en[10]),
+        })
+    return items, colls
+
+
 def write_csv(rows, fields, path):
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
@@ -250,9 +313,15 @@ def main():
     p_bi.add_argument("--file-en", required=True)
     p_bi.add_argument("--out-dir", default=".")
 
+    p_sif = sub.add_parser("sifnos", help="Single workbook with ITEM_GR/ITEM_EN/COLLECTION_GR/COLLECTION_EN sheets")
+    p_sif.add_argument("--file", required=True)
+    p_sif.add_argument("--out-dir", default=".")
+
     args = ap.parse_args()
 
-    if args.format == "amorgos":
+    if args.format == "sifnos":
+        items, collections = extract_sifnos(args.file)
+    elif args.format == "amorgos":
         items, collections = extract_amorgos(args.file)
     else:
         items, collections = extract_bilingual(args.file_el, args.file_en)

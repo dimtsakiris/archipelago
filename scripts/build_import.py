@@ -65,6 +65,23 @@ def qs_string(val):
     return f'"{val}"'
 
 
+MAX_STRING_LEN = 400   # Wikibase's default limit for String-datatype values
+
+
+def string_chunks(val, limit=MAX_STRING_LEN - 10):
+    """Split a long text into pieces that each fit a String value (<=400 chars),
+    cutting at word boundaries, so no information is lost and no statement fails."""
+    val = str(val).replace("\n", " ").strip()
+    out = []
+    while len(val) > limit:
+        cut = val[:limit].rsplit(" ", 1)[0] or val[:limit]
+        out.append(cut.strip())
+        val = val[len(cut):].strip()
+    if val:
+        out.append(val)
+    return out
+
+
 def qs_url(val):
     """URL-datatype values must ALSO be quoted like ordinary strings on
     this QuickStatements instance — a bare URL is misread as an
@@ -163,14 +180,22 @@ def build_collections_qs(rows, warnings):
 
         if row.get("creator"):
             lines.append(f"LAST|P2|{qs_string(row['creator'])}")
+        if row.get("creator_en"):
+            lines.append(f"LAST|P17|{qs_string(row['creator_en'])}")
         if row.get("keywords"):
             lines.append(f"LAST|P6|{qs_string(row['keywords'])}")
+        if row.get("keywords_en"):
+            lines.append(f"LAST|P19|{qs_string(row['keywords_en'])}")
         if row.get("an_project"):
             lines.append(f"LAST|P12|{qs_string(row['an_project'])}")
+        if row.get("an_project_en"):
+            lines.append(f"LAST|P21|{qs_string(row['an_project_en'])}")
         if row.get("documenter"):
             lines.append(f"LAST|P10|{qs_string(row['documenter'])}")
-        if row.get("notes"):
-            lines.append(f"LAST|P11|{qs_string(row['notes'])}")
+        for chunk in string_chunks(row.get("notes", "")):
+            lines.append(f"LAST|P11|{qs_string(chunk)}")
+        for chunk in string_chunks(row.get("notes_en", "")):
+            lines.append(f"LAST|P20|{qs_string(chunk)}")
         if identifier:
             lines.append(f"LAST|P14|{qs_string(identifier)}")
 
@@ -191,8 +216,11 @@ def build_items_qs(rows, qidmap, warnings):
         title_safe = safe_text(title, "title", identifier, warnings)
         lines.append("CREATE")
         lines.append(f"LAST|Lel|{qs_string(title_safe)}")
-        if row.get("title_en"):
-            lines.append(f"LAST|Len|{qs_string(safe_text(row['title_en'], 'title_en', identifier, warnings))}")
+        # Draft records (no title yet): use the identifier as the English label too,
+        # so the English UI never shows a bare Q-number.
+        title_en = row.get("title_en") or (identifier if not row["title"] else "")
+        if title_en:
+            lines.append(f"LAST|Len|{qs_string(safe_text(title_en, 'title_en', identifier, warnings))}")
         lines.append("LAST|P1|Q1")
 
         desc = row.get("description", "")
@@ -208,12 +236,26 @@ def build_items_qs(rows, qidmap, warnings):
         for c in p11_cmds:
             lines.append(f"LAST|{c}")
 
+        # English date text -> Notes (EN), only when a Greek date note was written (P11)
+        if p11_cmds and row.get("date_en"):
+            lines.append(f"LAST|P20|{qs_string(row['date_en'])}")
+        for chunk in string_chunks(row.get("notes", "")):
+            lines.append(f"LAST|P11|{qs_string(chunk)}")
+        for chunk in string_chunks(row.get("notes_en", "")):
+            lines.append(f"LAST|P20|{qs_string(chunk)}")
+
         if row.get("creator"):
             lines.append(f"LAST|P2|{qs_string(row['creator'])}")
+        if row.get("creator_en"):
+            lines.append(f"LAST|P17|{qs_string(row['creator_en'])}")
         if row.get("place"):
             lines.append(f"LAST|P4|{qs_string(row['place'])}")
+        if row.get("place_en"):
+            lines.append(f"LAST|P18|{qs_string(row['place_en'])}")
         if row.get("keywords"):
             lines.append(f"LAST|P6|{qs_string(row['keywords'])}")
+        if row.get("keywords_en"):
+            lines.append(f"LAST|P19|{qs_string(row['keywords_en'])}")
         if row.get("color"):
             lines.append(f"LAST|P7|{qs_string(row['color'])}")
         if row.get("method"):
@@ -224,6 +266,8 @@ def build_items_qs(rows, qidmap, warnings):
             lines.append(f"LAST|P10|{qs_string(row['documenter'])}")
         if row.get("an_project"):
             lines.append(f"LAST|P12|{qs_string(row['an_project'])}")
+        if row.get("an_project_en"):
+            lines.append(f"LAST|P21|{qs_string(row['an_project_en'])}")
         if identifier:
             lines.append(f"LAST|P14|{qs_string(identifier)}")
         if row.get("source_url"):
